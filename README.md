@@ -1,1 +1,1 @@
-# semyung_univ_project
+# 세명대학교 졸업작품 온라인 전시회 웹사이트 제작
