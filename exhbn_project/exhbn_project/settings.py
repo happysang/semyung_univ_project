@@ -55,7 +55,7 @@ ROOT_URLCONF = 'exhbn_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['exhbn_project/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
