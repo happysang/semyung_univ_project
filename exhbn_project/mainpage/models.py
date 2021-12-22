@@ -8,8 +8,6 @@ class Profile(models.Model):
     email = models.EmailField(max_length=20)
     wpage = models.CharField(max_length=100)
 
-
-
 # Seokgeun - 작품 카테고리 모델 생성 12.21
 class Type(models.Model):
     wtype=models.CharField(max_length = 10 , null = True)  # gd / ad / media 일단 3개로
