@@ -1,0 +1,49 @@
+{% extends 'nav.html' %}
+{% block content %}
+{% load static %}
+
+<table width="100%" style="text-align:center; border:none">
+  <tr>
+      <td colspan="2" style="background-color:white"></td><!--여백용-->
+  </tr>
+  <tr>
+      <td style="background-color:#329998; color:white; width:50%">
+        <img src = "{% static 'imgex.png' %}" width="278" height="416">
+      </td>
+      <td style="text-align:center">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+    
+          <div class="col">
+              <div class="card h-100" style="border:0; outline:0;"> <!--card의 선을 없앴다.-->
+                  <div style="text-align: center;"> <!--사진을 가운데에 오게하기 위해 center 속성을 가진 div태그로 감쌌다.-->
+                      <a><img src = "{% static 'imgex.png' %}" width="278" height="208"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
+                  </div>
+              </div>
+          </div>
+          
+
+          <div class="col">
+            <div class="card h-100" style="border:0; outline:0;"> <!--card의 선을 없앴다.-->
+                <div style="text-align: center;"> <!--사진을 가운데에 오게하기 위해 center 속성을 가진 div태그로 감쌌다.-->
+                    <a><img src = "{% static 'imgex.png' %}" width="278" height="208"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100" style="border:0; outline:0;"> <!--card의 선을 없앴다.-->
+              <div style="text-align: center;"> <!--사진을 가운데에 오게하기 위해 center 속성을 가진 div태그로 감쌌다.-->
+                  <a><img src = "{% static 'imgex.png' %}" width="278" height="208"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
+              </div>
+          </div>
+        </div>
+
+
+        </div>
+      </td>
+  </tr>
+  <!--<tr>
+      <td colspan="2" style="background-color:#FFCC00"><h2>Footer 영역</h2></td>
+  </tr>-->
+</table>
+{% endblock %}

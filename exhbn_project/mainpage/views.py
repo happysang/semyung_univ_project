@@ -7,3 +7,6 @@ def home(request):
 
 def allprofile(request):
     return render (request, 'allprofile.html')
+
+def detailprofile(request):
+    return render (request, 'detailprofile.html')
