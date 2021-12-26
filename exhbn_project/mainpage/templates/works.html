@@ -1,0 +1,33 @@
+{% extends 'nav.html' %}
+{% block content %}
+{% load static %}
+
+<div class="d-flex p-2 bd-highlight justify-content-center">
+  <div class="p-2 bd-highlight" ><a href="#" class="" style="text-decoration-line: none;"><span style="border-bottom-style:solid; border-bottom-width:3px; border-bottom-color:black;">그래픽디자인</span></a></div>
+  <div class="p-2 bd-highlight"><a href="#" class="" style="text-decoration-line: none;" >광고디자인</a></div>
+  <div class="p-2 bd-highlight"><a href="#" class="" style="text-decoration-line: none;" >영상 애니메이션</a></div>
+</div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-4 gx-4 gy-5">
+    {% for works in works %}
+    {% if works %}
+    <div class="col-sm-3">
+      <a href="{% url 'work_detail2' works.pk %}" style="text-decoration-line: none;">
+        <div class="card h-100" style="max-width: 22rem; width: 18rem; border:0; ">
+            <img src="{{ works.pic.url }}" class="card-img-top" style="height:12rem;" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 1.1em; font-weight: bold;">{{ works.title }}</p>
+              <p class="card-text" style="font-size: 0.8em; color: gray; ">{{ works.artist }}</p>
+            </div>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+<br><br><br><br><br><br><br><br>
+
+
+
+{% endblock %}
