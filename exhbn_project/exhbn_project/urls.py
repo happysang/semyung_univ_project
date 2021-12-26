@@ -28,4 +28,4 @@ urlpatterns = [
     path('works/<str:wtype>', views.works, name = 'works'),
     path('work_detail/<int:pk>', views.work_detail, name = 'work_detail'),
     path('work_detail2/<int:pk>', views.work_detail2, name = 'work_detail2'),
-] 
+]

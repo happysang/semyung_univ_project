@@ -26,7 +26,7 @@ class Work(models.Model):
 # Create your models here.
 class Profile(models.Model):
     name = models.CharField(max_length=10)
-    pimage = models.ImageField(upload_to='pimage/',blank=True, null=True)
+    pimage = models.CharField(max_length=20,blank=True, null=True)
     eng_name = models.CharField(max_length=10)
     introduce = models.TextField(max_length=100)
     email = models.CharField(max_length=20)
