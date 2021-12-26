@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import *
+import alldata
 
 # Create your views here.
 
@@ -7,13 +8,15 @@ def home(request):
     return render (request, 'home.html')
 
 def allprofile(request):
-    return render (request, 'allprofile.html')
+    alldata.profiledata()
+    allfile = Profile.objects()
+    return render (request, 'allprofile.html', {'allfile':allfile})
 
 def detailprofile(request):
     return render (request, 'detailprofile.html')
 
-
-
+def about(request):
+    return render (request, 'about.html')
 
 def worksall(request): #all
     works = Work.objects.all()

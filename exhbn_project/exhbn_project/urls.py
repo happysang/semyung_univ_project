@@ -22,7 +22,7 @@ urlpatterns = [
     path('', views.home, name = 'urlnamehome'),
     path('allprofile', views.allprofile, name = 'allprofile'),
     path('detailprofile', views.detailprofile, name = 'detailprofile'),
-
+    path('about', views.about, name = 'about'), 
 
     path('works', views.worksall, name = 'worksall'),
     path('works/<str:wtype>', views.works, name = 'works'),

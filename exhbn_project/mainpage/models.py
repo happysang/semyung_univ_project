@@ -29,6 +29,6 @@ class Profile(models.Model):
     pimage = models.ImageField(upload_to='pimage/',blank=True, null=True)
     eng_name = models.CharField(max_length=10)
     introduce = models.TextField(max_length=100)
-    email = models.EmailField(max_length=20)
+    email = models.CharField(max_length=20)
     wpage = models.CharField(max_length=100)
     project = models.ForeignKey(Work, on_delete = models.CASCADE,blank=True, null=True)
