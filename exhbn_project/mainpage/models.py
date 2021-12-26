@@ -1,12 +1,5 @@
 from django.db import models
 
-# Create your models here.
-class Profile(models.Model):
-    name = models.CharField(max_length=10)
-    eng_name = models.CharField(max_length=10)
-    introduce = models.TextField(max_length=100)
-    email = models.EmailField(max_length=20)
-    wpage = models.CharField(max_length=100)
 
 # Seokgeun - 작품 카테고리 모델 생성 12.21
 class Type(models.Model):
@@ -28,3 +21,14 @@ class Work(models.Model):
 
     def __str__(self):
         return self.title
+    
+    
+# Create your models here.
+class Profile(models.Model):
+    name = models.CharField(max_length=10)
+    pimage = models.ImageField(upload_to='pimage/',blank=True, null=True)
+    eng_name = models.CharField(max_length=10)
+    introduce = models.TextField(max_length=100)
+    email = models.EmailField(max_length=20)
+    wpage = models.CharField(max_length=100)
+    project = models.ForeignKey(Work, on_delete = models.CASCADE,blank=True, null=True)
