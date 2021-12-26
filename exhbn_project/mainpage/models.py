@@ -10,7 +10,10 @@ class Profile(models.Model):
 
 # Seokgeun - 작품 카테고리 모델 생성 12.21
 class Type(models.Model):
-    wtype=models.CharField(max_length = 10 , null = True)  # gd / ad / media 일단 3개로
+    wtype=models.CharField(max_length = 10 , null = True)  # gr / ad / me 일단 3개로
+
+    def __str__(self):
+        return self.wtype
 
 # Seokgeun - 작품 모델 생성 12.21
 class Work(models.Model):
@@ -23,3 +26,5 @@ class Work(models.Model):
     pic = models.ImageField(null = True, upload_to="%Y/%m/%d")  # 작품 사진파일
     youtube = models.CharField(max_length= 200) # 유튜브 링크
 
+    def __str__(self):
+        return self.title

@@ -1,0 +1,50 @@
+{% extends 'nav.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+  .title {
+    font-size: calc(1.4rem + 2.2vw);
+  }
+  .author {
+    font-size: calc(0.3rem + 0.8vw);
+    color: gray;
+  }
+  .content {
+    font-size: calc(0.3rem + 0.8vw);
+  }
+</style>
+{% for work in work %}
+{% if work %}
+<div class="row px-2 py-5 my-5">
+    <div class="col-5 h-100">
+      <img class="d-block mb-4" src="{{ work.pic.url }}" alt="" width="100%" height="100%" style="max-height: 56rem;">
+    </div>
+    <div class="col-1">
+    </div>
+    <div class="col-6">
+      <h1 class="title">{{ work.title }}</h1>
+      <h3 class="author">{{ work.artist }}</h3>
+      <br>
+    <p class="lead mb-4 content">{{ work.description }}</p>
+</div>
+
+
+<div class="d-flex bd-highlight mb-3">
+
+</div>
+
+
+<br><br><br><br><br><br><br>
+
+<div class="container">
+  <div class="ratio ratio-16x9">
+    <iframe width="100%"  height="auto"src="{{ work.youtube }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</div>
+
+{% endif %}
+{% endfor %}
+{% endblock %}
+

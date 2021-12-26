@@ -21,5 +21,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name = 'urlnamehome'),
     path('allprofile', views.allprofile, name = 'allprofile'),
-    path('detailprofile', views.detailprofile, name = 'detailprofile')
-]
+    path('detailprofile', views.detailprofile, name = 'detailprofile'),
+
+
+    path('works', views.worksall, name = 'worksall'),
+    path('works/<str:wtype>', views.works, name = 'works'),
+    path('work_detail/<int:pk>', views.work_detail, name = 'work_detail'),
+    path('work_detail2/<int:pk>', views.work_detail2, name = 'work_detail2'),
+] 
