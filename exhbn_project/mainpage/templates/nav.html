@@ -18,45 +18,46 @@
 
 
 <body>
-
-  <ul class="nav nav-pills" style="background-color: blueviolet;">
-    <li style="width: 10%;"></li> <!--공백-->
-      
-    <li class="nav-item">
-      <a class="nav-link" href="{%url 'home' %}" style="color: white; font-weight: 600; font-size: 25px; ">Spoiler</a>
-    </li>
-  
-    <li style="width: 50%;"></li> <!--공백-->
-      
-    <li class="nav-item">
-      <a class="nav-link" href="{%url 'about' %}" style="color: white; font-weight: 400;">About</a>
-    </li>
-  
-    <li class="nav-item">
-      <a class="nav-link" href="{%url 'allprofile' %}" style="color: white; font-weight: 400;">Designers</a>
-    </li>
-  
-    <li class="nav-item dropdown">
-      <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: white; font-weight: 400;">Works</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="{%url 'home' %}">Actioasfdsfn</a></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </li>
-  </ul>
-
-    
   <div class="container">
+
+    <ul class="nav nav-pills" style="background-color: blueviolet;">
+      <li style="width: 10%;"></li> <!--공백-->
+
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'home' %}" style="color: white; font-weight: 600; font-size: 25px; ">Spoiler</a>
+      </li>
+    
+      <li style="width: 50%;"></li> <!--공백-->
+
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'about' %}" style="color: white; font-weight: 400;">About</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="{%url 'allprofile' %}" style="color: white; font-weight: 400;">Designers</a>
+      </li>
+    
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: white; font-weight: 400;">Works</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">1</a></li>
+          <li><a class="dropdown-item" href="#">2</a></li>
+          <li><a class="dropdown-item" href="#">3</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <table width="100%" style="text-align:center; border:none">
       <tr>
-          <td colspan="2" style="background-color:blue" height="240"></td><!--여백용-->
-      </tr>
-      <tr>
-        {% block content %}
-        {% endblock %}
+          <td colspan="2" style="background-color:blue" height="240"></td><!--배경영상용-->>
       </tr>
     </table>
+
+
+  
+    {% block content %}
+    {% endblock %}
   </div>
 
 </body>
