@@ -7,13 +7,25 @@ def home(request):
     return render (request, 'home.html')
 
 def allprofile(request):
-    return render (request, 'allprofile.html')
+    obj = Profile()
+    obj.name = "홍길동"
+    obj.pimage = 'pimage/imgex.png'
+    obj.eng_name = "hong hong hong"
+    obj.introduce = "홍길동 입니다."
+    obj.email = "adfasd@email.com"
+    obj.wpage = "adf.asdf.com"
+    if Profile.objects.filter(name=obj.name).exists(): #새로고침 시 중복체크
+        pass
+    else:
+        obj.save()
+    allfile = Profile.objects.all()
+    return render (request, 'allprofile.html', {'allfile':allfile})
 
 def detailprofile(request):
     return render (request, 'detailprofile.html')
 
-
-
+def about(request):
+    return render (request, 'about.html')
 
 def worksall(request): #all
     works = Work.objects.all()
