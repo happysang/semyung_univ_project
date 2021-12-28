@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from mainpage import views
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name = 'urlnamehome'),
+    path('', views.home, name = 'home'),
     path('allprofile', views.allprofile, name = 'allprofile'),
     path('detailprofile', views.detailprofile, name = 'detailprofile'),
 
@@ -28,4 +30,4 @@ urlpatterns = [
     path('works/<str:wtype>', views.works, name = 'works'),
     path('work_detail/<int:pk>', views.work_detail, name = 'work_detail'),
     path('work_detail2/<int:pk>', views.work_detail2, name = 'work_detail2'),
-] 
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
