@@ -30,4 +30,6 @@ urlpatterns = [
     path('works/<str:wtype>', views.works, name = 'works'),
     path('work_detail/<int:pk>', views.work_detail, name = 'work_detail'),
     path('work_detail2/<int:pk>', views.work_detail2, name = 'work_detail2'),
+    path('about', views.about, name = 'about'),
+    
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

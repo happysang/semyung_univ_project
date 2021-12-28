@@ -3,16 +3,149 @@
 {% load static %}
 
 <style>
-.title {
-  font-size: calc(1.4rem + 2.2vw);
-}
-.author {
-  font-size: calc(0.3rem + 0.8vw);
-  color: gray;
-}
-.content {
-  font-size: calc(0.3rem + 0.8vw);
-}
-</style>
+    .Concept {
+    font-family: NotoSansCJKkr;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+    color: #e26e84;
+    }
+    .subtitle {
+    font-family: NotoSansCJKkr;
+    font-size: calc(19.2px + 0.875vw);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+    color: #222234;
+    }
+    .subcontent {
+    font-family: NotoSansCJKkr;
+    font-size: 1.12rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.025rem;
+    color: #666;
+    }
+    .blacklittle {
+        font-family: AppleSDGothicNeo;
+        font-size: 1.12rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.025rem;
+        color: #222234;
+    }
+    .grayname {
+        font-family: NotoSansCJKkr;
+        font-size: 1.12rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.06;
+        letter-spacing: 0.025rem;
+        color: #666;
+    }
+  </style>
+
+<div class="row content mt-5">
+    <div class="col-sm-3">
+        <div class="Concept lh-lg" style="width: 5rem;">Concept</div>
+    </div>
+
+    <div class="col-sm-9">
+        <div class="subtitle mb-5">스포일러 Spoiler</div>
+        <div class=""><span class="subcontent">‘스포하다’라는 표현은 영화 등의 줄거리를 미리 밝히는 행위다. 우리들은 4년간 영화 같은 시간들을 보내며 어느덧 졸업이라는 결말을 앞두고 있다. 그리고 이 온라인 졸업전시를 통해 기승전결 같았던 시간들을 보여주며 앞으로의 미래를 스포 한다. 이제 우리는 사회로 나아가 다시 영화 같은 앞날을 만들 준비가 되어있다. 새로운 기승전결과 함께.</span></div>
+    </div>
+</div>
+
+
+<div style="height: 10rem;"></div> <!-- 공백 -->
+
+<div class="row content mt-5">
+    <div class="col-sm-3">
+        <div class="Concept lh-lg" style="width: 5rem;">Graduation Committee</div>
+    </div>
+
+    <div class="col-sm-9">
+        <div class="subtitle mb-5">제 21회 졸업전시준비위원회</div>
+
+        <div class=""><img class="d-block mx-auto mb-4" src="{% static '1920x1080.jpg' %}" alt="" width="100%" height="auto" style="max-height: 72rem;"></div>
+        
+        <div class="row">
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">위원장</span><br><div style="line-height:200%;"><span class="grayname">김선식</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">부위원장</span><br><div style="line-height:200%;"><span class="grayname">민경서<br>김인학</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">도록팀장</span><br><div style="line-height:200%;"><span class="grayname">박요한</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">도록팀원</span><br><div style="line-height:200%;"><span class="grayname">박주이<br>신혜현<br>원도윤<br><br></span></div></div>
+        </div>
+  
+        <div class="row">
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">서기</span><br><div style="line-height:200%;"><span class="grayname">강민혁</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">총무</span><br><div style="line-height:200%;"><span class="grayname">류호경</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">영상</span><br><div style="line-height:200%;"><span class="grayname">정명현</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">홍보</span><br><div style="line-height:200%;"><span class="grayname">박효정</span></div></div>
+        </div>
+
+        <!-- <div class="row">
+          <div class="col-sm-3 mb-4"><span class="blacklittle">위원장</span></div>
+          <div class="col-sm-3 mb-4"><span class="blacklittle">부위원장</span></div>
+          <div class="col-sm-3 mb-4"><span class="blacklittle">도록팀장</span></div>
+          <div class="col-sm-3 mb-4"><span class="blacklittle">도록팀원</span></div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3 mb-4" style="line-height:200%;"><span class="grayname">김선식</span></div>
+          <div class="col-sm-3 mb-4" style="line-height:200%;"><span class="grayname">민경서<br>김인학</span></div>
+          <div class="col-sm-3 mb-4" style="line-height:200%;"><span class="grayname">박요한</span></div>
+          <div class="col-sm-3 mb-4" style="line-height:200%;"><span class="grayname">박주이<br>신혜현<br>원도윤</span></div>
+        </div> -->
+
+    </div>
+</div>
+
+<div style="height: 10rem;"></div> <!-- 공백 -->
+
+<div class="row content mt-5">
+    <div class="col-sm-3">
+        <div class="Concept">Professor</div>
+    </div>
+
+    <div class="col-sm-9">
+        <div class="subtitle mb-5">전임 교수님</div>
+
+        <div class="row">
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">광고디자인</span><br><div style="line-height:200%;"><span class="grayname">조각현</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">영상애니메이션</span><br><div style="line-height:200%;"><span class="grayname">홍일양</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">그래픽디자인</span><br><div style="line-height:200%;"><span class="grayname">권윤경<br>신희경</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle"></span><br><div style="line-height:200%;"><span class="grayname"></span></div></div>
+        </div>
+
+        <div style="height: 5rem;"></div> <!-- 공백 -->
+
+        <div class="subtitle mb-5">겸임 교수님</div>
+
+        <div class="row">
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">멀티미디어</span><br><div style="line-height:200%;"><span class="grayname">안혜정</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">모션그래픽</span><br><div style="line-height:200%;"><span class="grayname">김재연</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">3D 그래픽</span><br><div style="line-height:200%;"><span class="grayname">양상민</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">타이포그래피</span><br><div style="line-height:200%;"><span class="grayname">송재은<br></span></div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">표현기법</span><br><div style="line-height:200%;"><span class="grayname">호영수</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">디자인발상법</span><br><div style="line-height:200%;"><span class="grayname">유규열</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle">그래픽디자인</span><br><div style="line-height:200%;"><span class="grayname">신지원</span></div></div>
+            <div class="col-sm-3 mb-4" style="line-height:400%;"><span class="blacklittle"></span><br><div style="line-height:200%;"><span class="grayname"></span></div></div>
+        </div>
+        <div style="height: 5rem;"></div> <!-- 공백 -->
+    </div>
+</div>
 
 {% endblock %}
