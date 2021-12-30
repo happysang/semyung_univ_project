@@ -16,8 +16,13 @@ class Work(models.Model):
     wtype = models.ForeignKey(Type, null=True, on_delete=models.CASCADE)  # 작품 타입 (Graphic, Advertise, Media)
 
     description = models.TextField(null=True) # 작품 설명
+
+    thumbnail = models.ImageField(null = True, upload_to="%Y/%m/%d")  # 작품 썸네일
     pic = models.ImageField(null = True, upload_to="%Y/%m/%d")  # 작품 사진파일
-    youtube = models.CharField(max_length= 200) # 유튜브 링크
+
+    picprd = models.ImageField(null = True, blank = True, upload_to="%Y/%m/%d")  # 그래픽 전용 - 연출사진파일
+    youtube = models.CharField(blank = True, null = True, max_length= 200) # 미디어 전용 - 유튜브 링크
+
 
     def __str__(self):
         return self.title

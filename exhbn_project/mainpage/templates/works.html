@@ -12,9 +12,9 @@
     {% for works in works %}
     {% if works %}
     <div class="col-sm-3">
-      <a href="{% url 'work_detail2' works.pk %}" style="text-decoration-line: none;">
+      <a href="{% url 'work_detail' works.pk %}" style="text-decoration-line: none;">
         <div class="card h-100" style="max-width: 22rem; width: 18rem; border:0; ">
-            <img src="{{ works.pic.url }}" class="card-img-top" style="height:12rem;" alt="...">
+            <img src="{{ works.thumbnail.url }}" class="card-img-top" style="height:12rem;" alt="...">
             <div class="card-body">
               <p class="card-text" style="font-size: 1.1em; font-weight: bold;">{{ works.title }}</p>
               <p class="card-text" style="font-size: 0.8em; color: gray; ">{{ works.artist }}</p>

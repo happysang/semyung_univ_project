@@ -26,13 +26,28 @@ def works(request, wtype): #gd / ad / media
     works = Work.objects.filter(wtype = new_wtype)
     return render (request, 'works.html', {'works': works})
 
-def work_detail(request, pk): # type1
+def work_detail(request, pk): # type1 광고 디자인 ad type2 영상 애니메이션 me type3 그래픽 디자인 gr
     work = Work.objects.filter(pk=pk)
-    return render (request, 'work_detail.html', {'work': work})
+    wtypeObj = Type.objects.get(wtype = work[0].wtype)
+    print(wtypeObj)
+    wtypeStr = wtypeObj.wtype # ad / me / gr
+    print("wtypeStr: "+wtypeStr)
+    if wtypeStr == 'ad':
+        return render (request, 'work_detail.html', {'work': work})
+    elif wtypeStr == 'me':
+        return render (request, 'work_detail2.html', {'work': work})
+    elif wtypeStr == 'gr':
+        return render (request, 'work_detail3.html', {'work': work})
 
-def work_detail2(request, pk): # type2
-    work = Work.objects.filter(pk=pk)
-    return render (request, 'work_detail2.html', {'work': work})
+def work_detail_static(request):
+    return render(request, 'work_detail_static.html')
+
+def work_detail2_static(request):
+    return render(request, 'work_detail2_static.html')
+
+def work_detail3_static(request):
+    return render(request, 'work_detail3_static.html')   
+
 
 
 
