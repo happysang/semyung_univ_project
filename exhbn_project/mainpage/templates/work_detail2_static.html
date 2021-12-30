@@ -1,0 +1,91 @@
+{% extends 'nav.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+  .title {
+    font-size: calc(1.4rem + 2.2vw);
+  }
+  .author {
+    font-size: calc(0.3rem + 0.8vw);
+    color: gray;
+  }
+  .content {
+    font-size: calc(0.3rem + 0.8vw);
+  }
+  .Concept {
+    font-family: NotoSansCJKkr;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+    color: #e26e84;
+    }
+    .subtitle {
+    font-family: NotoSansCJKkr;
+    font-size: calc(19.2px + 0.875vw);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+    color: #222234;
+    }
+    .subcontent {
+    font-family: NotoSansCJKkr;
+    font-size: 1.12rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.025rem;
+    color: #666;
+    }
+    .blacklittle {
+        font-family: AppleSDGothicNeo;
+        font-size: 1.12rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.025rem;
+        color: #222234;
+    }
+    .grayname {
+        font-family: NotoSansCJKkr;
+        font-size: 1.12rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.06;
+        letter-spacing: 0.025rem;
+        color: #666;
+    }
+</style>
+
+<div class="row px-2 py-5 my-5">
+    <div class="col-5 h-100">
+      <img class="d-block mb-4" src="{% static '안예은_SEASON.jpg' %}" alt="" width="100%" height="100%" style="max-height: 56rem;">
+    </div>
+    <div class="col-1">
+    </div>
+    <div class="col-6">
+      <h1 class="title subtitle">SEASON</h1>
+      <h3 class="author subcontent">안예은</h3>
+      <br>
+    <p class="lead mb-4 content subcontent">계절의 특징을 나타내 언제든지 알맞은 의상을 골라 입을 수 있다는 것을 보여주었다. 변화를 크게 주기 위해 다양한 컬러를 사용하여 여러 의상과 계절별 풍경을 표현하였다.</p>
+</div>
+
+<div style="height: 10rem;"></div> <!-- 공백 -->
+
+<div class="container">
+  <div class="ratio ratio-16x9">
+    <iframe width="100%"  height="auto"src="https://www.youtube.com/embed/7Y-Anvjk6VY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</div>
+
+{% endblock %}
+

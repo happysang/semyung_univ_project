@@ -29,7 +29,9 @@ urlpatterns = [
     path('works', views.worksall, name = 'worksall'),
     path('works/<str:wtype>', views.works, name = 'works'),
     path('work_detail/<int:pk>', views.work_detail, name = 'work_detail'),
-    path('work_detail2/<int:pk>', views.work_detail2, name = 'work_detail2'),
     path('about', views.about, name = 'about'),
-    
+    path('work_detail_static', views.work_detail_static, name = 'work_detail_static'),
+    path('work_detail2_static', views.work_detail2_static, name = 'work_detail2_static'),
+    path('work_detail3_static', views.work_detail3_static, name = 'work_detail3_static'),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

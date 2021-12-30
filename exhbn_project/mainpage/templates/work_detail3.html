@@ -1,0 +1,98 @@
+{% extends 'nav.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+    .title {
+    font-size: calc(1.4rem + 2.2vw);
+    }
+    .author {
+    font-size: calc(0.3rem + 0.8vw);
+    color: gray;
+    }
+    .content {
+    font-size: calc(0.3rem + 0.8vw);
+    }
+    .Concept {
+    font-family: NotoSansCJKkr;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03rem;
+    color: #e26e84;
+    }
+    .subtitle {
+    font-family: NotoSansCJKkr;
+    font-size: calc(19.2px + 0.875vw);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+    color: #222234;
+    }
+    .subcontent {
+    font-family: NotoSansCJKkr;
+    font-size: 1.12rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.025rem;
+    color: #666;
+    }
+    .blacklittle {
+        font-family: AppleSDGothicNeo;
+        font-size: 1.12rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.025rem;
+        color: #222234;
+    }
+    .grayname {
+        font-family: NotoSansCJKkr;
+        font-size: 1.12rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.06;
+        letter-spacing: 0.025rem;
+        color: #666;
+    }
+</style>
+{% for work in work %}
+{% if work %}
+<div class="row content mt-5">
+    <div class="col-sm-3">
+        <div class="Concept lh-lg" style="width: 5rem;">Concept</div>
+    </div>
+
+    <div class="col-sm-9">
+        <div class="subtitle mb-5" style="line-height:180%;">{{ work.title }}<br><p class="h6 subcontent">{{ work.artist }}</p></div>
+
+        <div class=""><span class="subcontent">{{ work.description }}</span></div>
+    </div>
+</div>
+
+
+<div style="height: 10rem;"></div> <!-- 공백 -->
+
+
+<div class="row content mt-5">
+    <div class="col-sm-6">
+        <div><img class="d-block mx-auto mb-4" src="{{ work.pic.url }}" alt="" width="100%" height="auto" style="max-height: 106rem;"></div> <!--이미지 -->
+    </div>
+
+    <div class="col-sm-6">
+        <div><img class="d-block mx-auto mb-4" src="{{ work.picprd.url }}" alt="" width="100%" height="auto" style="max-height: 106rem;"></div> <!--이미지 -->
+    </div>
+</div>
+
+{% endif %}
+{% endfor %}
+{% endblock %}
+
