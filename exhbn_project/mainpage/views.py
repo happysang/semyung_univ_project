@@ -2,22 +2,12 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import *
 
 # Create your views here.
-
 def home(request):
     return render (request, 'home.html')
 
+
 def allprofile(request):
-    obj = Profile()
-    obj.name = "홍길동"
-    obj.pimage = 'pimage/imgex.png'
-    obj.eng_name = "hong hong hong"
-    obj.introduce = "홍길동 입니다."
-    obj.email = "adfasd@email.com"
-    obj.wpage = "adf.asdf.com"
-    if Profile.objects.filter(name=obj.name).exists(): #새로고침 시 중복체크
-        pass
-    else:
-        obj.save()
+    data_insert()
     allfile = Profile.objects.all()
     return render (request, 'allprofile.html', {'allfile':allfile})
 
@@ -43,3 +33,78 @@ def work_detail(request, pk): # type1
 def work_detail2(request, pk): # type2
     work = Work.objects.filter(pk=pk)
     return render (request, 'work_detail2.html', {'work': work})
+
+
+
+
+def data_insert():
+    profile_list = []
+    
+    obj = Profile()
+    obj.name = "김선식"
+    obj.pimage = 'pimage/thum/김선식 썸네일.jpg'
+    obj.eng_name = "KIM, SEON-SIK"
+    obj.email = "zmffhwld753@gmail.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "민경서"
+    obj.pimage = 'pimage/thum/민경서 썸네일.jpg'
+    obj.eng_name = "MIN, KYOUNG-SEO"
+    obj.email = "821z594@gmail.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "김인학"
+    obj.pimage = 'pimage/thum/김인학 썸네일.jpg'
+    obj.eng_name = "KIM, IN-HAK"
+    obj.email = "mniac123@naver.com"
+    profile_list.append(obj)
+        
+    obj = Profile()
+    obj.name = "박요한"
+    obj.pimage = 'pimage/thum/박요한 썸네일.jpg'
+    obj.eng_name = "PARK, YO-HAN"
+    obj.email = "yohanux@gmail.com"
+    profile_list.append(obj)
+        
+    obj = Profile()
+    obj.name = "강민혁"
+    obj.pimage = 'pimage/thum/강민혁 썸네일.jpg'
+    obj.eng_name = "KANG, MIN-HYUK"
+    obj.email = "minhyuk3308@naver.com"
+    profile_list.append(obj)
+        
+    obj = Profile()
+    obj.name = "류호경"
+    obj.pimage = 'pimage/thum/류호경 썸네일.jpg'
+    obj.eng_name = "RYU, HO-KYUNG"
+    obj.email = "ryuhokyung9764@gmail.com"
+    profile_list.append(obj)
+        
+    obj = Profile()
+    obj.name = "정명현"
+    obj.pimage = 'pimage/thum/정명현 썸네일.jpg'
+    obj.eng_name = "KIM, SEON-SIK"
+    obj.email = "kih3957@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "박효정"
+    obj.pimage = 'pimage/thum/박효정 썸네일.jpg'
+    obj.eng_name = "PARK, HYO-JEONG"
+    obj.email = "qkrgywjd32@gmail.com"
+    profile_list.append(obj)
+    
+    
+    
+    
+    
+    
+    
+    
+    for x in profile_list:
+        if Profile.objects.filter(name=x.name).exists(): #새로고침 시 중복체크
+            pass
+        else:
+            x.save()
