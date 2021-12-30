@@ -23,7 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name = 'home'),
     path('allprofile', views.allprofile, name = 'allprofile'),
-    path('detailprofile', views.detailprofile, name = 'detailprofile'),
+    path('detailprofile<str:each_id>', views.detailprofile, name = 'detailprofile'),
 
 
     path('works', views.worksall, name = 'worksall'),

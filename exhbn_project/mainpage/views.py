@@ -5,14 +5,14 @@ from .models import *
 def home(request):
     return render (request, 'home.html')
 
-
 def allprofile(request):
     data_insert()
     allfile = Profile.objects.all()
     return render (request, 'allprofile.html', {'allfile':allfile})
 
-def detailprofile(request):
-    return render (request, 'detailprofile.html')
+def detailprofile(request,each_id):
+    detail_obj = get_object_or_404(Profile, pk = each_id)
+    return render (request, 'detailprofile.html', {'ppp':detail_obj})
 
 def about(request):
     return render (request, 'about.html')
@@ -111,12 +111,117 @@ def data_insert():
     obj.email = "qkrgywjd32@gmail.com"
     profile_list.append(obj)
     
+    obj = Profile()
+    obj.name = "박주이"
+    obj.pimage = 'pimage/thum/박주이 썸네일.jpg'
+    obj.eng_name = "PARK, JU-YI"
+    obj.email = "5733wndl@naver.com"
+    profile_list.append(obj)
     
+    obj = Profile()
+    obj.name = "원도윤"
+    obj.pimage = 'pimage/thum/원도윤 썸네일.jpg'
+    obj.eng_name = "WON, DO-YOON"
+    obj.email = "do-hwazi@naver.com"
+    profile_list.append(obj)
     
+    obj = Profile()
+    obj.name = "신혜현"
+    obj.pimage = 'pimage/thum/신혜현 썸네일.jpg'
+    obj.eng_name = "SHIN, HYE-HYEON"
+    obj.email = "enffl22500@naver.com"
+    profile_list.append(obj)
     
+    obj = Profile()
+    obj.name = "최현우"
+    obj.pimage = 'pimage/thum/최현우 썸네일.jpg'
+    obj.eng_name = "CHOI, HYUN-WOO"
+    obj.email = "alsguswns2@naver.com"
+    profile_list.append(obj)
     
+    obj = Profile()
+    obj.name = "정지황"
+    obj.pimage = 'pimage/thum/정지황 썸네일.jpg'
+    obj.eng_name = "JEONG, JI-HWANG"
+    obj.email = "earth19999@naver.com"
+    profile_list.append(obj)
     
+    obj = Profile()
+    obj.name = "최영현"
+    obj.pimage = 'pimage/thum/최영현 썸네일.jpg'
+    obj.eng_name = "CHOI, YOUNG-HYEON"
+    obj.email = "dudgusdl03@naver.com"
+    profile_list.append(obj)
     
+    obj = Profile()
+    obj.name = "신진경"
+    obj.pimage = 'pimage/thum/신진경 썸네일.jpg'
+    obj.eng_name = "SHIN, JIN-GYEONG"
+    obj.email = "api0422@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "김민서"
+    obj.pimage = 'pimage/thum/김민서 썸네일.jpg'
+    obj.eng_name = "KIM, MIN-SEO"
+    obj.email = "alstj6136@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "김예지"
+    obj.pimage = 'pimage/thum/김예지 썸네일.jpg'
+    obj.eng_name = "KIM, YE-JI"
+    obj.email = "kkyj9846@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "전예린"
+    obj.pimage = 'pimage/thum/전예린 썸네일.jpg'
+    obj.eng_name = "JEON, YE-LIN"
+    obj.email = "yxyxxyxxx@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "김나영"
+    obj.pimage = 'pimage/thum/김나영 썸네일.jpg'
+    obj.eng_name = "KIM, NA-YOUNG"
+    obj.email = "jme06050@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "김예지"
+    obj.pimage = 'pimage/thum/김예지 썸네일.jpg'
+    obj.eng_name = "KIM, YE-JI"
+    obj.email = "kkyj9846@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "김다은"
+    obj.pimage = 'pimage/thum/김다은 썸네일.jpg'
+    obj.eng_name = "KIM, DA-EUN"
+    obj.email = "daen0202@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "김영경"
+    obj.pimage = 'pimage/thum/김영경 썸네일.jpg'
+    obj.eng_name = "KIM, YOUNG-KYUNG"
+    obj.email = "kim51867@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "안예은"
+    obj.pimage = 'pimage/thum/안예은 썸네일.jpg'
+    obj.eng_name = "AN, YE-EUN"
+    obj.email = "0629an@naver.com"
+    profile_list.append(obj)
+    
+    obj = Profile()
+    obj.name = "정예림"
+    obj.pimage = 'pimage/thum/정예림 썸네일.jpg'
+    obj.eng_name = "JUNG, YE-LIM"
+    obj.email = "ylimjung99@gmail.com"
+    profile_list.append(obj)
     
     for x in profile_list:
         if Profile.objects.filter(name=x.name).exists(): #새로고침 시 중복체크
