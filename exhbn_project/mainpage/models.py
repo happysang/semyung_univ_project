@@ -30,10 +30,11 @@ class Work(models.Model):
     
 # Create your models here.
 class Profile(models.Model):
-    name = models.CharField(max_length=10)
+    name = models.CharField(max_length=10,blank=True, null=True)
     pimage = models.CharField(max_length=20,blank=True, null=True)
-    eng_name = models.CharField(max_length=10)
+    d_pimage = models.CharField(max_length=20,blank=True, null=True)
+    eng_name = models.CharField(max_length=10,blank=True, null=True)
     introduce = models.TextField(max_length=100,blank=True, null=True)
-    email = models.CharField(max_length=20)
+    email = models.CharField(max_length=20,blank=True, null=True)
     wpage = models.CharField(max_length=100,blank=True, null=True)
     project = models.ForeignKey(Work, on_delete = models.CASCADE,blank=True, null=True)

@@ -58,6 +58,7 @@ def data_insert():
     obj = Profile()
     obj.name = "김선식"
     obj.pimage = 'pimage/thum/김선식 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/김선식.jpg'
     obj.eng_name = "KIM, SEON-SIK"
     obj.email = "zmffhwld753@gmail.com"
     profile_list.append(obj)
@@ -65,6 +66,7 @@ def data_insert():
     obj = Profile()
     obj.name = "민경서"
     obj.pimage = 'pimage/thum/민경서 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/민경서.jpg'
     obj.eng_name = "MIN, KYOUNG-SEO"
     obj.email = "821z594@gmail.com"
     profile_list.append(obj)
@@ -72,6 +74,7 @@ def data_insert():
     obj = Profile()
     obj.name = "김인학"
     obj.pimage = 'pimage/thum/김인학 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/김인학.jpg'
     obj.eng_name = "KIM, IN-HAK"
     obj.email = "mniac123@naver.com"
     profile_list.append(obj)
@@ -79,6 +82,7 @@ def data_insert():
     obj = Profile()
     obj.name = "박요한"
     obj.pimage = 'pimage/thum/박요한 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/박요한.jpg'
     obj.eng_name = "PARK, YO-HAN"
     obj.email = "yohanux@gmail.com"
     profile_list.append(obj)
@@ -86,6 +90,7 @@ def data_insert():
     obj = Profile()
     obj.name = "강민혁"
     obj.pimage = 'pimage/thum/강민혁 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/강민혁.jpg'
     obj.eng_name = "KANG, MIN-HYUK"
     obj.email = "minhyuk3308@naver.com"
     profile_list.append(obj)
@@ -93,6 +98,7 @@ def data_insert():
     obj = Profile()
     obj.name = "류호경"
     obj.pimage = 'pimage/thum/류호경 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/류호경.jpg'
     obj.eng_name = "RYU, HO-KYUNG"
     obj.email = "ryuhokyung9764@gmail.com"
     profile_list.append(obj)
@@ -100,6 +106,7 @@ def data_insert():
     obj = Profile()
     obj.name = "정명현"
     obj.pimage = 'pimage/thum/정명현 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/정명현.jpg'
     obj.eng_name = "KIM, SEON-SIK"
     obj.email = "kih3957@naver.com"
     profile_list.append(obj)
@@ -107,6 +114,7 @@ def data_insert():
     obj = Profile()
     obj.name = "박효정"
     obj.pimage = 'pimage/thum/박효정 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/박효정.jpg'
     obj.eng_name = "PARK, HYO-JEONG"
     obj.email = "qkrgywjd32@gmail.com"
     profile_list.append(obj)
@@ -114,6 +122,7 @@ def data_insert():
     obj = Profile()
     obj.name = "박주이"
     obj.pimage = 'pimage/thum/박주이 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/박주이.jpg'
     obj.eng_name = "PARK, JU-YI"
     obj.email = "5733wndl@naver.com"
     profile_list.append(obj)
@@ -121,6 +130,7 @@ def data_insert():
     obj = Profile()
     obj.name = "원도윤"
     obj.pimage = 'pimage/thum/원도윤 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/원도윤.jpg'
     obj.eng_name = "WON, DO-YOON"
     obj.email = "do-hwazi@naver.com"
     profile_list.append(obj)
@@ -128,6 +138,7 @@ def data_insert():
     obj = Profile()
     obj.name = "신혜현"
     obj.pimage = 'pimage/thum/신혜현 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/신혜현.jpg'
     obj.eng_name = "SHIN, HYE-HYEON"
     obj.email = "enffl22500@naver.com"
     profile_list.append(obj)
@@ -135,6 +146,7 @@ def data_insert():
     obj = Profile()
     obj.name = "최현우"
     obj.pimage = 'pimage/thum/최현우 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/최현우.jpg'
     obj.eng_name = "CHOI, HYUN-WOO"
     obj.email = "alsguswns2@naver.com"
     profile_list.append(obj)
@@ -142,6 +154,7 @@ def data_insert():
     obj = Profile()
     obj.name = "정지황"
     obj.pimage = 'pimage/thum/정지황 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/정지황.jpg'
     obj.eng_name = "JEONG, JI-HWANG"
     obj.email = "earth19999@naver.com"
     profile_list.append(obj)
@@ -149,6 +162,7 @@ def data_insert():
     obj = Profile()
     obj.name = "최영현"
     obj.pimage = 'pimage/thum/최영현 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/최영현.jpg'
     obj.eng_name = "CHOI, YOUNG-HYEON"
     obj.email = "dudgusdl03@naver.com"
     profile_list.append(obj)
@@ -156,6 +170,7 @@ def data_insert():
     obj = Profile()
     obj.name = "신진경"
     obj.pimage = 'pimage/thum/신진경 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/신진경.jpg'
     obj.eng_name = "SHIN, JIN-GYEONG"
     obj.email = "api0422@naver.com"
     profile_list.append(obj)
@@ -163,6 +178,7 @@ def data_insert():
     obj = Profile()
     obj.name = "김민서"
     obj.pimage = 'pimage/thum/김민서 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/김민서.jpg'
     obj.eng_name = "KIM, MIN-SEO"
     obj.email = "alstj6136@naver.com"
     profile_list.append(obj)
@@ -170,6 +186,7 @@ def data_insert():
     obj = Profile()
     obj.name = "김예지"
     obj.pimage = 'pimage/thum/김예지 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/김예지.jpg'
     obj.eng_name = "KIM, YE-JI"
     obj.email = "kkyj9846@naver.com"
     profile_list.append(obj)
@@ -177,6 +194,7 @@ def data_insert():
     obj = Profile()
     obj.name = "전예린"
     obj.pimage = 'pimage/thum/전예린 썸네일.jpg'
+    obj.d_pimage = 'pimage/detail/전예린.jpg'
     obj.eng_name = "JEON, YE-LIN"
     obj.email = "yxyxxyxxx@naver.com"
     profile_list.append(obj)

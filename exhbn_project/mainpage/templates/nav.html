@@ -13,11 +13,35 @@
       display: block;
       margin-top: 0;
     }
+
+    .bg {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      margin: 0px auto;
+      position: relative;
+    }
+    video {
+      width: 100%;
+    }
+    .text {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .text p {
+      text-align: center;
+      font-size: 48px;
+      color: #ffffff;
+    }
   </style>
 </head>
 
 
 <body>
+  {% load static %}
   <div class="container">
 
     <ul class="nav nav-pills" style="background-color: blueviolet;">
@@ -50,7 +74,18 @@
 
     <table width="100%" style="text-align:center; border:none">
       <tr>
-          <td colspan="2" style="background-color:blue" height="240"></td><!--배경영상용-->
+          <td colspan="2" height="240">
+            
+            <div class="bg">
+              <video muted autoplay loop>
+                <source src="//bit.ly/3kYMF9A" type="video/mp4">
+              </video>
+              <div class="text">
+                <p>무슨말을쓸까</p>
+              </div>
+            </div>
+
+          </td><!--배경영상용-->
       </tr>
     </table>
 
