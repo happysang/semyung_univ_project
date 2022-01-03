@@ -78,7 +78,7 @@
             
             <div class="bg">
               <video muted autoplay loop>
-                <source src="//bit.ly/3kYMF9A" type="video/mp4">
+                <source src="{% static '배경영상.mp4' %}" type="video/mp4">
               </video>
               <div class="text">
                 <p>무슨말을쓸까</p>
@@ -88,9 +88,6 @@
           </td><!--배경영상용-->
       </tr>
     </table>
-
-
-  
     {% block content %}
     {% endblock %}
   </div>
