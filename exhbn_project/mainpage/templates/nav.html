@@ -20,6 +20,7 @@
       overflow: hidden;
       margin: 0px auto;
       position: relative;
+      z-index: 1;
     }
     video {
       width: 100%;
@@ -36,58 +37,64 @@
       font-size: 48px;
       color: #ffffff;
     }
+    .fix {
+      position: fixed;
+      height: 60px;
+      background-color: rgba( 255, 255, 255, 0 );
+      width: 100%;
+      z-index: 2;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 
 
 <body>
   {% load static %}
-  <div class="container">
+  <div class="container" style="width: 100%;">
 
-    <ul class="nav nav-pills" style="background-color: #d47cb4;">
-      <li style="width: 10%;"></li> <!--공백-->
+    <div class="fix">
+      <ul class="nav nav-pills">
+        <li style="width: 10%;"></li> <!--공백-->
+  
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'home' %}" style="color: black; font-weight: 600; font-size: 25px; ">Spoiler</a>
+        </li>
+      
+        <li style="width: 50%;"></li> <!--공백-->
+  
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'about' %}" style="color: black; font-weight: 400;">About</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="{%url 'allprofile' %}" style="color: black; font-weight: 400;">Designers</a>
+        </li>
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black; font-weight: 400;">Works</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">1</a></li>
+            <li><a class="dropdown-item" href="#">2</a></li>
+            <li><a class="dropdown-item" href="#">3</a></li>
+          </ul>
+        </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="{%url 'home' %}" style="color: white; font-weight: 600; font-size: 25px; ">Spoiler</a>
-      </li>
-    
-      <li style="width: 50%;"></li> <!--공백-->
+      </ul>
+    </div>
 
-      <li class="nav-item">
-        <a class="nav-link" href="{%url 'about' %}" style="color: white; font-weight: 400;">About</a>
-      </li>
-    
-      <li class="nav-item">
-        <a class="nav-link" href="{%url 'allprofile' %}" style="color: white; font-weight: 400;">Designers</a>
-      </li>
-    
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: white; font-weight: 400;">Works</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">1</a></li>
-          <li><a class="dropdown-item" href="#">2</a></li>
-          <li><a class="dropdown-item" href="#">3</a></li>
-        </ul>
-      </li>
-    </ul>
+  
+    <div class="bg">
+      <video muted autoplay loop>
+        <source src="{% static '배경영상.mp4' %}" type="video/mp4">
+      </video>
+      <div class="text">
+        <p>졸업전시회</p>
+      </div>
+    </div>
 
-
-    <table width="100%" style="text-align:center; border:none">
-      <tr>
-          <td colspan="2" height="240">
-            
-            <div class="bg">
-              <video muted autoplay loop>
-                <source src="{% static '배경영상.mp4' %}" type="video/mp4">
-              </video>
-              <div class="text">
-                <p>무슨말을쓸까</p>
-              </div>
-            </div>
-            
-          </td><!--배경영상용-->
-      </tr>
-    </table>
 
 
   
