@@ -48,7 +48,7 @@ def work_detail2_static(request):
 def work_detail3_static(request):
     return render(request, 'work_detail3_static.html')   
 
-
+##데이터 삽입
 
 
 
