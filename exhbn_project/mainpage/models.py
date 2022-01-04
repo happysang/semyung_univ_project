@@ -17,10 +17,13 @@ class Work(models.Model):
 
     description = models.TextField(null=True) # 작품 설명
 
-    thumbnail = models.ImageField(null = True, upload_to="%Y/%m/%d")  # 작품 썸네일
-    pic = models.ImageField(null = True, upload_to="%Y/%m/%d")  # 작품 사진파일
+    # thumbnail = models.ImageField(null = True, upload_to="%Y/%m/%d")  # 작품 썸네일
+    # pic = models.ImageField(null = True, upload_to="%Y/%m/%d")  # 작품 사진파일
+    thumbnail = models.CharField(max_length=50)
+    pic = models.CharField(max_length=50)
 
-    picprd = models.ImageField(null = True, blank = True, upload_to="%Y/%m/%d")  # 그래픽 전용 - 연출사진파일
+    # picprd = models.ImageField(null = True, blank = True, upload_to="%Y/%m/%d")  # 그래픽 전용 - 연출사진파일
+    picprd = models.CharField(max_length=50)
     youtube = models.CharField(blank = True, null = True, max_length= 200) # 미디어 전용 - 유튜브 링크
 
 
