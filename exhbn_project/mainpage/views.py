@@ -120,6 +120,16 @@ def work_insert_ad():
     w.wtype=Type.objects.get(wtype = 'ad')
     work_list.append(w)
 
+    w = Work()
+    w.artist= '김인학'
+    w.title= '한눈에 보이는 세상'
+    w.description= '외국 운송 업체 기업인 ‘FedEx’의 해외 배송이 매우 빠름을 기업 로고 속 세계지도가 보이는 것으로 표현한 작품이다.'
+    w.thumbnail= 'wimage/thum/김인학_한눈에 보이는 세상_썸네일.jpg'
+    w.pic= 'wimage/pic/김인학_한눈에 보이는 세상.jpg'
+    w.wtpe=Type.objecs.get(wtype = 'ad')
+    work_list.append(w)
+
+
     for x in work_list:
         if Work.objects.filter(title=x.title).exists(): #새로고침 시 중복체크
             pass
