@@ -12,7 +12,8 @@ def allprofile(request):
 
 def detailprofile(request,each_id):
     detail_obj = get_object_or_404(Profile, pk = each_id)
-    return render (request, 'detailprofile.html', {'ppp':detail_obj})
+    allwork = Work.objects.all()
+    return render (request, 'detailprofile.html', {'ppp':detail_obj, 'works':allwork})
 
 def about(request):
     return render (request, 'about.html')

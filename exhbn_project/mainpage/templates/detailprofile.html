@@ -4,50 +4,41 @@
 
 <table width="100%" style="text-align:center; border:none">
     <tr>
-        <td colspan="2" style="background-color:white" height="20"></td><!--여백용-->
+        <td colspan="2" style="background-color:white" height="160"></td><!--여백용-->
     </tr>
   
     <tr>
-        <td style="background-color:#329998; width:50%">
-            <div class="card h-100" style="border:0; outline:0; background-color: orange;"> <!--card의 선을 없앴다.-->
+        <td style=" width:50%">
+            <div class="card h-100" style="border:0; outline:0;"> <!--card의 선을 없앴다.-->
                 <div style="text-align: center;"> <!--사진을 가운데에 오게하기 위해 center 속성을 가진 div태그로 감쌌다.-->
                     <a><img src = "{% static ppp.pimage %}" width="278" height="416"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
                 </div>
             </div>
-            <div class="card-body" style= "text-align:center; margin: 0; padding: 0; background-color: green;">
+            <div class="card-body" style= "text-align:center; margin: 0; padding: 0;">
                 <h5 class="card-title">{{ppp.name}}</h5>
                 <p class="card-text">{{ppp.eng_name}}</p>
             </div>
         </td>
 
 
-        <td style="text-align:center; background-color:#329918;">
-            <div class="row row-cols-1 row-cols-md-2 g-2" style="background-color: purple;">
-    
-                <div class="col" style="background-color: red;">
-                    <div class="card h-100" style="border:0; outline:0; background-color: yellow;"> <!--card의 선을 없앴다.-->
+        <td style="text-align:center;">
+            <div class="row row-cols-1 row-cols-md-2 g-2">
+                {% for works in works %}
+                {% if ppp.name in works.artist %}
+                <div class="col">
+                    <div class="card h-100" style="border:0; outline:0;"> <!--card의 선을 없앴다.-->
                         <div style="text-align: center;"> <!--사진을 가운데에 오게하기 위해 center 속성을 가진 div태그로 감쌌다.-->
-                            <a><img src = "{% static 'imgex.png' %}" width="278" height="208"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
+                            <a><img src = "{% static works.thumbnail %}" width="278" height="208"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
                         </div>
 
                         <div class="card-body" style= "text-align:center; margin: 0; padding: 0;">
-                            <h5 class="card-title">홍길동</h5>
-                            <p class="card-text">Hong gill dong</p>
+                            <h5 class="card-title">{{works.title}}</h5>
+                            <p class="card-text">{{works.artist}}</p>
                         </div>
                     </div>
                 </div>
-    
-                <div class="card h-100" style="border:0; outline:0; background-color: yellow;"> <!--card의 선을 없앴다.-->
-                    <div style="text-align: center;"> <!--사진을 가운데에 오게하기 위해 center 속성을 가진 div태그로 감쌌다.-->
-                        <a><img src = "{% static 'imgex.png' %}" width="278" height="208"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
-                    </div>
-
-                    <div class="card-body" style= "text-align:center; margin: 0; padding: 0;">
-                        <h5 class="card-title">홍길동</h5>
-                        <p class="card-text">Hong gill dong</p>
-                    </div>
-                </div>  
-
+                {% endif %}
+                {% endfor %}
             </div>
         </td>
     </tr>
