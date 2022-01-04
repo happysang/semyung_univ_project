@@ -84,11 +84,15 @@
 
 <div class="row content mt-5">
     <div class="col-sm-6">
-        <div><img class="d-block mx-auto mb-4" src="{{ work.pic.url }}" alt="" width="100%" height="auto" style="max-height: 106rem;"></div> <!--이미지 -->
+        <!-- <div><img class="d-block mx-auto mb-4" src="{{ work.pic.url }}" alt="" width="100%" height="auto" style="max-height: 106rem;"></div> 이미지 -->
+        <div><img class="d-block mx-auto mb-4" src="{% static work.pic %}" alt="" width="100%" height="auto" style="max-height: 106rem;"></div> <!--이미지 -->
+        
     </div>
 
     <div class="col-sm-6">
-        <div><img class="d-block mx-auto mb-4" src="{{ work.picprd.url }}" alt="" width="100%" height="auto" style="max-height: 106rem;"></div> <!--이미지 -->
+        <!-- <div><img class="d-block mx-auto mb-4" src="{{ work.picprd.url }}" alt="" width="100%" height="auto" style="max-height: 106rem;"></div> 이미지 -->
+        <div><img class="d-block mx-auto mb-4" src="{% static work.picprd %}" alt="" width="100%" height="auto" style="max-height: 106rem;"></div> <!--이미지 -->
+
     </div>
 </div>
 
