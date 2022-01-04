@@ -53,7 +53,7 @@
 
 <body>
   {% load static %}
-  <div class="container" style="width: 100%;">
+  
 
     <div class="fix">
       <ul class="nav nav-pills">
@@ -76,9 +76,9 @@
         <li class="nav-item dropdown">
           <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black; font-weight: 400;">Works</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">1</a></li>
-            <li><a class="dropdown-item" href="#">2</a></li>
-            <li><a class="dropdown-item" href="#">3</a></li>
+            <li><a class="dropdown-item" href="{%url 'works' 'gr' %}">그래픽</a></li>
+            <li><a class="dropdown-item" href="{%url 'works' 'ad' %}">광고</a></li>
+            <li><a class="dropdown-item" href="{%url 'works' 'me' %}">미디어</a></li>
           </ul>
         </li>
 
@@ -97,7 +97,7 @@
 
 
 
-  
+  <div class="container" style="width: 100%;">
     {% block content %}
     {% endblock %}
   </div>
