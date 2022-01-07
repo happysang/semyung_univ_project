@@ -605,9 +605,260 @@ def work_insert_gr():
     gr.description= '‘독립만세주’는 매년 찾아오는 광복절을 기념할 수 있는 전통 증류소주입니다. 순국선열에 대한 감사를 표하고자 국화(國花)인 무궁화와 술 한 잔을 올리자는 뜻에서 제작하였습니다.'
     gr.thumbnail= 'gimage/thum/강민혁_독립만세주_썸네일.jpg'
     gr.pic= 'gimage/pic/강민혁_독립만세주_보드.jpg'
-    gr.picprd= 'gimage/picprd/강민혁_연출.jpg'
+    gr.picprd= 'gimage/picprd/강민혁_연출.png'
     gr.wtype=Type.objects.get(wtype = 'gr')
     gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='류호경'
+    gr.title= '예스럽다'
+    gr.description= '한복은 삼국시대부터 입기 시작했고, 중국의 주장은 한복이 명나라로부터 왔다고 하지만 삼국시대 때는 명나라는 존재 하지 않았다. 양직공도나 고구려 고분을 보면 알 수 있듯 한복은 고대한국으로부터 내려온 전통의상이라고 할 수  있다. 한복이 우리나라 전통의상이라는 것을 알리기 위해서 장신구와 전통패턴으로 포스터디자인 캘린더를 제작했다.'
+    gr.thumbnail= 'gimage/thum/류호경_썸네일.jpg'
+    gr.pic= 'gimage/pic/류호경_예스럽다.jpg'
+    gr.picprd= 'gimage/picprd/류호경_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='정명현'
+    gr.title= '오복밥집'
+    gr.description= '혼자 사는 사람들이 언제든지 편하게 들러서 맛있고 건강한 집 밥 같은 음식을 즐길 수 있는, 깔끔하고 편안한 분위기의 한 식당이다. 바쁜 학생이나 직장인들을 위한 배달, 포장 서비스도 개발했다.'
+    gr.thumbnail= 'gimage/thum/정명현_썸네일.jpg'
+    gr.pic= 'gimage/pic/정명현_오복밥집.jpg'
+    gr.picprd= 'gimage/picprd/정명현_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='박효정'
+    gr.title= 'HOME SWEET HOME'
+    gr.description= '여행을 떠나지 못해 집에서라도 랜선 여행의 느낌을 줄 수 있도록 랜드마크와 ‘아이키’라는 댄서의 캐릭터를 담은 캘린더 디자인이다. 높은 채도의 7가지 컬러를 활용하여 활발하고 생기 있는 느낌을 주었다.'
+    gr.thumbnail= 'gimage/thum/박효정_썸네일.jpg'
+    gr.pic= 'gimage/pic/박효정_HOME SWEET HOME.jpg'
+    gr.picprd= 'gimage/picprd/박효정_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='박주이'
+    gr.title= ' I’M O'
+    gr.description= '친환경 생리대 브랜드 ‘I’M O’는 여성의 건강과 안전을 최우선으로 생각하며 원료부터 생산과정까지 따져 고객을 만족시키 는 것이 목표인 브랜드이다. I’M O의 상징인 무당벌레를 이용하여 브랜드 로고를 리디자인했으며 여성의 유동적인 모습을 그린 일러스트로 패키지, 캘린더, 굿즈를 디자인했다.'
+    gr.thumbnail= 'gimage/thum/박주이_썸네일.jpg'
+    gr.pic= 'gimage/pic/박주이_아임오 로고 리디자인.jpg'
+    gr.picprd= 'gimage/picprd/박주이_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='원도윤'
+    gr.title= '장승이네'
+    gr.description= '충남 공주시의 장승마을을 주제로 제작한 패턴 디자인이다. 어린이들을 대상으로 인디언 장승을 단순화하고 다채로운 컬 러를 사용했다. 장승이네는 장승이, 장군이, 장돌이 세 캐릭터로 각각 어울리는 인디언 문양을 조합하여 패턴을 디자인했다.'
+    gr.thumbnail= 'gimage/thum/원도윤_썸네일.jpg'
+    gr.pic= 'gimage/pic/원도윤_장승이네.jpg'
+    gr.picprd= 'gimage/picprd/원도윤_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='신혜현'
+    gr.title= '파라다이스'
+    gr.description= '파라다이스는 일에 치여 사는 현대인에게 맥주 한 잔으로 잠시나마 바다를 다녀온 듯한 느낌을 선사하는 맥주 브랜드이다. 바다를 상징하는 고래, 돛단배, 파도를 모티브로 한 캐릭터를 제작하여 브랜드 아이덴티티를 구축하고자 했다.'
+    gr.thumbnail= 'gimage/thum/신혜현_썸네일.jpg'
+    gr.pic= 'gimage/pic/신혜현_파라다이스.jpg'
+    gr.picprd= 'gimage/picprd/신혜현_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='오동우'
+    gr.title= 'The higher'
+    gr.description= '도쿄 올림픽에서 우리에게 큰 감동을 준 선수들과 올림픽 상징 구호인 ‘ 더 높게’ 문구를 선정하여 우리에게 큰 감동과 더 높 은 곳으로 성장할 수 있다는 콘셉트로 한 달력 디자인이다.'
+    gr.thumbnail= 'gimage/thum/오동우_The higher_썸네일.jpg'
+    gr.pic= 'gimage/pic/오동우_The higher.jpg'
+    gr.picprd= 'gimage/picprd/오동우_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='최영현, 최현우'
+    gr.title= 'Overandus'
+    gr.description= '인터넷 사업을 하는 의류업체의 자신의 스타일을 구상할 수 있는 앱이며, 나만의 스타일을 누군가에게 보여줄 수 있다. 또 한 공유가 가능하기 때문에 인플루언서가 될 기회를 얻을 수 있는 UI/UX 디자인 작품이다.'
+    gr.thumbnail= 'gimage/thum/최영현최현우_오버앤어스_썸네일.jpg'
+    gr.pic= 'gimage/pic/최영현, 최현우_오버앤어스.jpg'
+    gr.picprd= 'gimage/picprd/최영현, 최현우_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='신진경'
+    gr.title= '말티숑 이브'
+    gr.description= '말티즈와 비숑의 유전자가 섞인 강아지 이브를 캐릭터화해서 만든 작품으로 이브의 일상을 표현하였다. 말티즈를 닮았지 만 곱슬거리는 털이 포인트인 이브의 장난스러운 모습을 담아낸 작품이다.'
+    gr.thumbnail= 'gimage/thum/신진경_말티숑이브_썸네일.jpg'
+    gr.pic= 'gimage/pic/신진경_말티숑이브.jpg'
+    gr.picprd= 'gimage/picprd/신진경_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='김민서'
+    gr.title= 'TOYFUL'
+    gr.description= 'TOYFUL은 ‘기쁨을 주는’ 이라는 뜻을 가진 JOYFUL과 유사한 발음을 가진 것에서 착안한 타이틀로써 저소득 아동에게 장 난감을 통해 기쁨을 선물하겠다는 뜻을 담은 토이저러스 캠페인 디자인이다.'
+    gr.thumbnail= 'gimage/thum/김민서_썸네일.jpg'
+    gr.pic= 'gimage/pic/김민서_TOYFUL.jpg'
+    gr.picprd= 'gimage/picprd/김민서_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='김예지'
+    gr.title= '다온'
+    gr.description= '평소 잘 사용하지 않지만 우리나라의 전통이 담겨있는 노리개를 이용하여 가상의 브랜드를 직접 만들어 패턴이나 일러스 트화 시켜 표현한 패키지 디자인이다.'
+    gr.thumbnail= 'gimage/thum/김예지_썸네일.jpg'
+    gr.pic= 'gimage/pic/김예지_다온.jpg'
+    gr.picprd= 'gimage/picprd/김예지_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='전예린'
+    gr.title= '우리의 것'
+    gr.description= '수백 년의 역사가 살아 숨 쉬는 우리나라 전통문화. 오랜 세월을 굳건히 함께한 만큼, 서로 다른 보물들과 이야기를 품고 있 다. 어렵게 다가올 수 있지만 친근하고 정겨운 캐릭터로 가까워지는 시간을 갖고 싶다.'
+    gr.thumbnail= 'gimage/thum/전예린_썸네일.jpg'
+    gr.pic= 'gimage/pic/전예린_우리의 것!.jpg'
+    gr.picprd= 'gimage/picprd/전예린_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='김나영'
+    gr.title= '안다미로'
+    gr.description= '‘안다미로’는 ‘담은 것이 그릇에 넘치도록 많게’라는 뜻으로 청풍면 도곡리의 많은 볼거리와 체험할 곳, 좋은 황토에서 나오 는 농산물이 가득한 마을을 지칭하는 브랜드명이다.'
+    gr.thumbnail= 'gimage/thum/김나영_썸네일.jpg'
+    gr.pic= 'gimage/pic/김나영_안다미로.jpg'
+    gr.picprd= 'gimage/picprd/김나영_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='김다은'
+    gr.title= '필코'
+    gr.description= '‘필코’는 친환경 활동을 재미있게 참여할 수 있도록 도와주는 소셜 앱 서비스이다. 필환경 활동의 저조한 실천률을 높이고자 실시간 인증 형식의 도전과제들로 동기부여와 참여의식을 높여준다. 필코는 작은 실천들이 모여 위대한 변화를 이룬다는 슬로건처럼 친환경 생활습관 형성에 도움을 주는 것이 목표이다.'
+    gr.thumbnail= 'gimage/thum/김다은_썸네일.jpg'
+    gr.pic= 'gimage/pic/김다은_2020캘린더.jpg'
+    gr.picprd= 'gimage/picprd/김다은_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='김영경'
+    gr.title= '여행이 고프다'
+    gr.description= '2021년 코로나 바이러스로 인해 여행을 계획했던 많은 사람들이 모든 계획을 취소하고 여행을 나중으로 밀었다. 여행을 가 지 못하게 된 아쉬운 마음을 달래고자 가고 싶은 나라들을 일러스트로 표현하여 캘린더들 디자인했다.'
+    gr.thumbnail= 'gimage/thum/김영경_썸네일.jpg'
+    gr.pic= 'gimage/pic/김영경_여행이고프다.jpg'
+    gr.picprd= 'gimage/picprd/김영경_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='안예은'
+    gr.title= '후드덕'
+    gr.description= '‘후드덕’은 오리를 모티브로 한 캐릭터로 모두가 친근하게 받아들일 수 있도록 심플하고 귀엽게 디자인하였다. 옐로우 컬러 를 메인으로 사용해서 포근하며 발랄한 이미지를 주도록 하였다.'
+    gr.thumbnail= 'gimage/thum/안예은_썸네일.jpg'
+    gr.pic= 'gimage/pic/안예은_후드덕.jpg'
+    gr.picprd= 'gimage/picprd/안예은_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='정예림'
+    gr.title= 'People cloz'
+    gr.description= '패션을 좋아하는 누구나 패션 정보를 공유하며 색다른 패션 트렌드를 만들어나가는 공간. AR 카메라, 착장 스케치를 통해 쇼핑도 재밌고 윤택하게 할 수 있는 앱이다. AR 카메라를 통해 옷을 미리 코디해 볼 수 있으며 착장 스케치를 통해 쇼핑하 고자 하는 옷을 코디해 볼 수 있다는 부분이 이 애플리케이션에서 가장 강점인 기능이다.'
+    gr.thumbnail= 'gimage/thum/정예림_썸네일.jpg'
+    gr.pic= 'gimage/pic/정예림_people clo z.jpg'
+    gr.picprd= 'gimage/picprd/정예림_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='지광민'
+    gr.title= '2022 범돌이의 일 년'
+    gr.description= '2022년 호랑이의 해를 맞이해 호랑이 캐릭터 범돌이가 날짜에 맞춰 1년 동안의 사계절을 만끽하며 알차게 살아가는 모습 을 보여주는 캘린더 디자인이다.'
+    gr.thumbnail= 'gimage/thum/지광민_2022 범돌이의 일년_썸네일.jpg'
+    gr.pic= 'gimage/pic/지광민_2022 범돌이의 일년.jpg'
+    gr.picprd= 'gimage/picprd/지광민__연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='한승희'
+    gr.title= 'Zdian sign'
+    gr.description= '밤하늘을 빛내는 별자리를 알리기 위한 인포그래픽을 제작했다. 누구나 쉽게 볼수 있게 일러스트 위주로 제작했으며, 12황 도라 불리는 별자리에는 색을 넣어 그 외의 별자리와 다르게 차별성을 두었다.'
+    gr.thumbnail= 'gimage/thum/한승희_썸네일.jpg'
+    gr.pic= 'gimage/pic/한승희_zodiac sign.jpg'
+    gr.picprd= 'gimage/picprd/한승희_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='홍성현'
+    gr.title= '멜린 초콜릿'
+    gr.description= '달달한 특제 과일 시럽이 특징인 프리미엄 초콜릿 브랜드 ‘Mellin’을 브랜딩한 디자인 작품이다. 대중적이지 않은 과일들 에서 오는 특별한 맛과 친숙한 과일들을 진하게 녹여 낸 시럽처럼 패키지 역시 각각의 과일 모양 속에 통통 튀는 패턴들 이 담겨 있다.'
+    gr.thumbnail= 'gimage/thum/홍성현_썸네일.jpg'
+    gr.pic= 'gimage/pic/홍성현_멜린초콜릿.jpg'
+    gr.picprd= 'gimage/picprd/홍성현_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='나우팔'
+    gr.title= 'COLASIA'
+    gr.description= '말레이시아는 이슬람교의 문화를 따라 대부분이 히잡으로 스카프를 착용한다. 말레이시아, 중국, 인도 세 개의 주요 인종이 있고 종족마다의 고유의 전통에 따른 히잡 패턴을 제작하였다.'
+    gr.thumbnail= 'gimage/thum/나우팔_썸네일.jpg'
+    gr.pic= 'gimage/pic/나우팔_COLASIA.jpg'
+    gr.picprd= 'gimage/picprd/나우팔_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='장함'
+    gr.title= '청화자'
+    gr.description= '청화자는 중국 도자기의 주류 품종 중 하나로 무늬가 매우 섬세하고 독특하기 때문에 색채가 단일하지만 변화무쌍하며 현대 유행하는 중국 문화 원소이다. 작품과 전통문화 요소를 특색 있는 지역문화를 담은 우표디자인 작품을 제작하였다.'
+    gr.thumbnail= 'gimage/thum/장함_썸네일.jpg'
+    gr.pic= 'gimage/pic/장함_ 청화자.jpg'
+    gr.picprd= 'gimage/picprd/장함  _연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='고벽영'
+    gr.title= '나의 즐거운 삶'
+    gr.description= '삶을 주제로 만든 우표로 좋아하는 음식(케이크,콜라,우유 등)과 삶의 일부 모습을 담아 제작한 캐릭터 디자인이다. 색상 은 산뜻하고 심플한 컬러로 구성했다.'
+    gr.thumbnail= 'gimage/thum/고벽영_썸네일.jpg'
+    gr.pic= 'gimage/pic/고벽영_나의 즐거운 삶.jpg'
+    gr.picprd= 'gimage/picprd/고벽영_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='우삼청'
+    gr.title= '중국의 명경치'
+    gr.description= '중국의 유명한 풍경인 계린산수, 대만 일월담, 안후이 황산, 베경 고궁, 항저우시후, 쑤저우 원림, 창장 산협, 만리장성의 우 표 디자인이다. 중국의 대표적인 풍경들을 골라 우표를 제작하였다.'
+    gr.thumbnail= 'gimage/thum/우삼청_썸네일.jpg'
+    gr.pic= 'gimage/pic/우삼청_중극의 명경치.jpg'
+    gr.picprd= 'gimage/picprd/우삼청_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
+    gr = Work()
+    gr.artist='임운유'
+    gr.title= '경극'
+    gr.description= '중국 전통 경극은 세계 각지를 돌아다니며 중국 전통예술 문화를 소개하고 전파하는 중요한 매개체이다. 이 경극을 모티브 로 중국적 특색을 살리고 경극적 요소를 가미한 우표 디자인이다.'
+    gr.thumbnail= 'gimage/thum/임운유_썸네일.jpg'
+    gr.pic= 'gimage/pic/임운유_경극우표.jpg'
+    gr.picprd= 'gimage/picprd/임운유_연출.png'
+    gr.wtype=Type.objects.get(wtype = 'gr')
+    gr_list.append(gr)
+
 
     for x in gr_list:
         if Work.objects.filter(title=x.title).exists(): #새로고침 시 중복체크
