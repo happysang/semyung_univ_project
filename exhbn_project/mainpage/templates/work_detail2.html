@@ -68,7 +68,7 @@
 {% if work %}
 <div class="row px-2 py-5 my-5">
     <div class="col-5 h-100">
-      <img class="d-block mb-4" src="{{ work.pic.url }}" alt="" width="100%" height="100%" style="max-height: 56rem;">
+      <img class="d-block mb-4" src="{% static work.pic %}" alt="" width="100%" height="100%" style="max-height: 56rem;">
     </div>
     <div class="col-1">
     </div>
@@ -79,7 +79,7 @@
     <p class="lead mb-4 content subcontent">{{ work.description }}</p>
 </div>
 
-<div style="height: 10rem;"></div> <!-- 공백 -->
+<div style="height: 5rem;"></div> <!-- 공백 -->
 
 <div class="container">
   <div class="ratio ratio-16x9">

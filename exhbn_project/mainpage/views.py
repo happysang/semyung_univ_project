@@ -684,7 +684,7 @@ def work_insert_gr():
     gr.artist='최영현, 최현우'
     gr.title= 'Overandus'
     gr.description= '인터넷 사업을 하는 의류업체의 자신의 스타일을 구상할 수 있는 앱이며, 나만의 스타일을 누군가에게 보여줄 수 있다. 또한 공유가 가능하기 때문에 인플루언서가 될 기회를 얻을 수 있는 UI/UX 디자인 작품이다.'
-    gr.thumbnail= 'gimage/thum/최영현최현우_오버앤어스_썸네일.jpg'
+    gr.thumbnail= 'gimage/thum/최영현최현우_오버앤어스_썸네일.png'
     gr.pic= 'gimage/pic/최영현, 최현우_오버앤어스.jpg'
     gr.picprd= 'gimage/picprd/최영현, 최현우_연출.png'
     gr.wtype=Type.objects.get(wtype = 'gr')
@@ -1014,7 +1014,7 @@ def work_insert_me():
     me.artist= '신유찬'
     me.title= '우리는 변화한다'
     me.description= '중소기업이 제공하는 다양한 복지를 보여주며 사회적 책임, 근로자 노동 가치 존중, 훌륭한 직장 문화를 가지고 있다는 것을 보여주는 영상이다. 전체적인 색감을 통일해 편안함을 주었고, 공감 소재를 활용해 즐거움을 느낄 수 있도록 제작했다.'
-    me.thumbnail= 'mimage/thum/신유찬_썸네일.jpg'
+    me.thumbnail= 'mimage/thum/신유찬_썸네일.png'
     me.pic= 'mimage/pic/신유찬_우리는 변화한다.jpg'
     me.youtube= 'https://www.youtube.com/embed/9nZCZ7gBsRg'
     me.wtype=Type.objects.get(wtype = 'me')
