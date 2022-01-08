@@ -25,7 +25,7 @@ def worksall(request): #all
 def works(request, wtype): #gd / ad / media
     new_wtype = Type.objects.get(wtype = wtype)
     works = Work.objects.filter(wtype = new_wtype)
-    return render (request, 'works.html', {'works': works})
+    return render (request, 'works.html', {'works': works, 't': wtype})
 
 def work_detail(request, pk): # type1 광고 디자인 ad type2 영상 애니메이션 me type3 그래픽 디자인 gr
     work = Work.objects.filter(pk=pk)
