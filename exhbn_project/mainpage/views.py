@@ -53,6 +53,7 @@ def init_data(request):
     type_insert()
     work_insert_ad()
     work_insert_gr()
+    work_insert_me()
     return render(request, 'home.html')
 
 
@@ -562,7 +563,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='김선식'
     gr.title= 'People & pet'
-    gr.description= '무분별한 분양과 무책임한 방치, 유기 때문에 고통을 받는 반려동물들이 많아지고 있다. 그러한 상황을 타파하기 위해서 반 려 동물 등록제와 연동 가능한 애플리케이션을 디자인하였다.'
+    gr.description= '무분별한 분양과 무책임한 방치, 유기 때문에 고통을 받는 반려동물들이 많아지고 있다. 그러한 상황을 타파하기 위해서 반려 동물 등록제와 연동 가능한 애플리케이션을 디자인하였다.'
     gr.thumbnail= 'gimage/thum/김선식_P_P_썸네일.jpg'
     gr.pic= 'gimage/pic/김선식_P_P.jpg'
     gr.picprd= 'gimage/picprd/김선식_연출.png'
@@ -572,7 +573,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='민경서'
     gr.title= '캠핑 포레스트'
-    gr.description= '캠핑은 계절과 관계없이 언제든 즐길 수 있는 활동이라는 것을 표현하고 계절별로 캠핑을 했을 때 느낄 수 있는 매력을 보 여주려 했다. 계절뿐만 아니라 밤과 낮, 새벽 시간에 따라 다른 매력과 활동들을 소개했다. 일러스트를 보며 바쁜 일상 속 캠 핑을 못 가더라도 추억할 수 있도록 디자인했다.'
+    gr.description= '캠핑은 계절과 관계없이 언제든 즐길 수 있는 활동이라는 것을 표현하고 계절별로 캠핑을 했을 때 느낄 수 있는 매력을 보 여주려 했다. 계절뿐만 아니라 밤과 낮, 새벽 시간에 따라 다른 매력과 활동들을 소개했다. 일러스트를 보며 바쁜 일상 속 캠핑을 못 가더라도 추억할 수 있도록 디자인했다.'
     gr.thumbnail= 'gimage/thum/민경서_캠핑포레스트_썸네일.jpg'
     gr.pic= 'gimage/pic/민경서_캠핑포레스트.jpg'
     gr.picprd= 'gimage/picprd/민경서_연출.png'
@@ -582,7 +583,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='김인학'
     gr.title= '무어'
-    gr.description= '한입에 먹기 좋은 초밥과 야채를 합쳐 만든 음식을 제공하는 브랜드 디자인으로 절제된 패턴 그래픽과 로고를 이용하여 정 적인 브랜드 이미지를 연출하였다.'
+    gr.description= '한입에 먹기 좋은 초밥과 야채를 합쳐 만든 음식을 제공하는 브랜드 디자인으로 절제된 패턴 그래픽과 로고를 이용하여 정적인 브랜드 이미지를 연출하였다.'
     gr.thumbnail= 'gimage/thum/김인학_무어_썸네일.jpg'
     gr.pic= 'gimage/pic/김인학_무어.jpg'
     gr.picprd= 'gimage/picprd/김인학_연출.png'
@@ -612,7 +613,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='류호경'
     gr.title= '예스럽다'
-    gr.description= '한복은 삼국시대부터 입기 시작했고, 중국의 주장은 한복이 명나라로부터 왔다고 하지만 삼국시대 때는 명나라는 존재 하지 않았다. 양직공도나 고구려 고분을 보면 알 수 있듯 한복은 고대한국으로부터 내려온 전통의상이라고 할 수  있다. 한복이 우리나라 전통의상이라는 것을 알리기 위해서 장신구와 전통패턴으로 포스터디자인 캘린더를 제작했다.'
+    gr.description= '한복은 삼국시대부터 입기 시작했고, 중국의 주장은 한복이 명나라로부터 왔다고 하지만 삼국시대 때는 명나라는 존재하지 않았다. 양직공도나 고구려 고분을 보면 알 수 있듯 한복은 고대한국으로부터 내려온 전통의상이라고 할 수 있다. 한복이 우리나라 전통의상이라는 것을 알리기 위해서 장신구와 전통패턴으로 포스터디자인 캘린더를 제작했다.'
     gr.thumbnail= 'gimage/thum/류호경_썸네일.jpg'
     gr.pic= 'gimage/pic/류호경_예스럽다.jpg'
     gr.picprd= 'gimage/picprd/류호경_연출.png'
@@ -642,7 +643,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='박주이'
     gr.title= ' I’M O'
-    gr.description= '친환경 생리대 브랜드 ‘I’M O’는 여성의 건강과 안전을 최우선으로 생각하며 원료부터 생산과정까지 따져 고객을 만족시키 는 것이 목표인 브랜드이다. I’M O의 상징인 무당벌레를 이용하여 브랜드 로고를 리디자인했으며 여성의 유동적인 모습을 그린 일러스트로 패키지, 캘린더, 굿즈를 디자인했다.'
+    gr.description= '친환경 생리대 브랜드 ‘I’M O’는 여성의 건강과 안전을 최우선으로 생각하며 원료부터 생산과정까지 따져 고객을 만족시키는 것이 목표인 브랜드이다. I’M O의 상징인 무당벌레를 이용하여 브랜드 로고를 리디자인했으며 여성의 유동적인 모습을 그린 일러스트로 패키지, 캘린더, 굿즈를 디자인했다.'
     gr.thumbnail= 'gimage/thum/박주이_썸네일.jpg'
     gr.pic= 'gimage/pic/박주이_아임오 로고 리디자인.jpg'
     gr.picprd= 'gimage/picprd/박주이_연출.png'
@@ -652,7 +653,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='원도윤'
     gr.title= '장승이네'
-    gr.description= '충남 공주시의 장승마을을 주제로 제작한 패턴 디자인이다. 어린이들을 대상으로 인디언 장승을 단순화하고 다채로운 컬 러를 사용했다. 장승이네는 장승이, 장군이, 장돌이 세 캐릭터로 각각 어울리는 인디언 문양을 조합하여 패턴을 디자인했다.'
+    gr.description= '충남 공주시의 장승마을을 주제로 제작한 패턴 디자인이다. 어린이들을 대상으로 인디언 장승을 단순화하고 다채로운 컬러를 사용했다. 장승이네는 장승이, 장군이, 장돌이 세 캐릭터로 각각 어울리는 인디언 문양을 조합하여 패턴을 디자인했다.'
     gr.thumbnail= 'gimage/thum/원도윤_썸네일.jpg'
     gr.pic= 'gimage/pic/원도윤_장승이네.jpg'
     gr.picprd= 'gimage/picprd/원도윤_연출.png'
@@ -672,7 +673,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='오동우'
     gr.title= 'The higher'
-    gr.description= '도쿄 올림픽에서 우리에게 큰 감동을 준 선수들과 올림픽 상징 구호인 ‘ 더 높게’ 문구를 선정하여 우리에게 큰 감동과 더 높 은 곳으로 성장할 수 있다는 콘셉트로 한 달력 디자인이다.'
+    gr.description= '도쿄 올림픽에서 우리에게 큰 감동을 준 선수들과 올림픽 상징 구호인 ‘더 높게’ 문구를 선정하여 우리에게 큰 감동과 더 높은 곳으로 성장할 수 있다는 콘셉트로 한 달력 디자인이다.'
     gr.thumbnail= 'gimage/thum/오동우_The higher_썸네일.jpg'
     gr.pic= 'gimage/pic/오동우_The higher.jpg'
     gr.picprd= 'gimage/picprd/오동우_연출.png'
@@ -682,7 +683,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='최영현, 최현우'
     gr.title= 'Overandus'
-    gr.description= '인터넷 사업을 하는 의류업체의 자신의 스타일을 구상할 수 있는 앱이며, 나만의 스타일을 누군가에게 보여줄 수 있다. 또 한 공유가 가능하기 때문에 인플루언서가 될 기회를 얻을 수 있는 UI/UX 디자인 작품이다.'
+    gr.description= '인터넷 사업을 하는 의류업체의 자신의 스타일을 구상할 수 있는 앱이며, 나만의 스타일을 누군가에게 보여줄 수 있다. 또한 공유가 가능하기 때문에 인플루언서가 될 기회를 얻을 수 있는 UI/UX 디자인 작품이다.'
     gr.thumbnail= 'gimage/thum/최영현최현우_오버앤어스_썸네일.jpg'
     gr.pic= 'gimage/pic/최영현, 최현우_오버앤어스.jpg'
     gr.picprd= 'gimage/picprd/최영현, 최현우_연출.png'
@@ -692,7 +693,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='신진경'
     gr.title= '말티숑 이브'
-    gr.description= '말티즈와 비숑의 유전자가 섞인 강아지 이브를 캐릭터화해서 만든 작품으로 이브의 일상을 표현하였다. 말티즈를 닮았지 만 곱슬거리는 털이 포인트인 이브의 장난스러운 모습을 담아낸 작품이다.'
+    gr.description= '말티즈와 비숑의 유전자가 섞인 강아지 이브를 캐릭터화해서 만든 작품으로 이브의 일상을 표현하였다. 말티즈를 닮았지만 곱슬거리는 털이 포인트인 이브의 장난스러운 모습을 담아낸 작품이다.'
     gr.thumbnail= 'gimage/thum/신진경_말티숑이브_썸네일.jpg'
     gr.pic= 'gimage/pic/신진경_말티숑이브.jpg'
     gr.picprd= 'gimage/picprd/신진경_연출.png'
@@ -702,7 +703,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='김민서'
     gr.title= 'TOYFUL'
-    gr.description= 'TOYFUL은 ‘기쁨을 주는’ 이라는 뜻을 가진 JOYFUL과 유사한 발음을 가진 것에서 착안한 타이틀로써 저소득 아동에게 장 난감을 통해 기쁨을 선물하겠다는 뜻을 담은 토이저러스 캠페인 디자인이다.'
+    gr.description= 'TOYFUL은 ‘기쁨을 주는’ 이라는 뜻을 가진 JOYFUL과 유사한 발음을 가진 것에서 착안한 타이틀로써 저소득 아동에게 장난감을 통해 기쁨을 선물하겠다는 뜻을 담은 토이저러스 캠페인 디자인이다.'
     gr.thumbnail= 'gimage/thum/김민서_썸네일.jpg'
     gr.pic= 'gimage/pic/김민서_TOYFUL.jpg'
     gr.picprd= 'gimage/picprd/김민서_연출.png'
@@ -712,7 +713,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='김예지'
     gr.title= '다온'
-    gr.description= '평소 잘 사용하지 않지만 우리나라의 전통이 담겨있는 노리개를 이용하여 가상의 브랜드를 직접 만들어 패턴이나 일러스 트화 시켜 표현한 패키지 디자인이다.'
+    gr.description= '평소 잘 사용하지 않지만 우리나라의 전통이 담겨있는 노리개를 이용하여 가상의 브랜드를 직접 만들어 패턴이나 일러스트화 시켜 표현한 패키지 디자인이다.'
     gr.thumbnail= 'gimage/thum/김예지_썸네일.jpg'
     gr.pic= 'gimage/pic/김예지_다온.jpg'
     gr.picprd= 'gimage/picprd/김예지_연출.png'
@@ -722,7 +723,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='전예린'
     gr.title= '우리의 것'
-    gr.description= '수백 년의 역사가 살아 숨 쉬는 우리나라 전통문화. 오랜 세월을 굳건히 함께한 만큼, 서로 다른 보물들과 이야기를 품고 있 다. 어렵게 다가올 수 있지만 친근하고 정겨운 캐릭터로 가까워지는 시간을 갖고 싶다.'
+    gr.description= '수백 년의 역사가 살아 숨 쉬는 우리나라 전통문화. 오랜 세월을 굳건히 함께한 만큼, 서로 다른 보물들과 이야기를 품고 있다. 어렵게 다가올 수 있지만 친근하고 정겨운 캐릭터로 가까워지는 시간을 갖고 싶다.'
     gr.thumbnail= 'gimage/thum/전예린_썸네일.jpg'
     gr.pic= 'gimage/pic/전예린_우리의 것!.jpg'
     gr.picprd= 'gimage/picprd/전예린_연출.png'
@@ -732,7 +733,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='김나영'
     gr.title= '안다미로'
-    gr.description= '‘안다미로’는 ‘담은 것이 그릇에 넘치도록 많게’라는 뜻으로 청풍면 도곡리의 많은 볼거리와 체험할 곳, 좋은 황토에서 나오 는 농산물이 가득한 마을을 지칭하는 브랜드명이다.'
+    gr.description= '‘안다미로’는 ‘담은 것이 그릇에 넘치도록 많게’라는 뜻으로 청풍면 도곡리의 많은 볼거리와 체험할 곳, 좋은 황토에서 나오는 농산물이 가득한 마을을 지칭하는 브랜드명이다.'
     gr.thumbnail= 'gimage/thum/김나영_썸네일.jpg'
     gr.pic= 'gimage/pic/김나영_안다미로.jpg'
     gr.picprd= 'gimage/picprd/김나영_연출.png'
@@ -752,7 +753,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='김영경'
     gr.title= '여행이 고프다'
-    gr.description= '2021년 코로나 바이러스로 인해 여행을 계획했던 많은 사람들이 모든 계획을 취소하고 여행을 나중으로 밀었다. 여행을 가 지 못하게 된 아쉬운 마음을 달래고자 가고 싶은 나라들을 일러스트로 표현하여 캘린더들 디자인했다.'
+    gr.description= '2021년 코로나 바이러스로 인해 여행을 계획했던 많은 사람들이 모든 계획을 취소하고 여행을 나중으로 밀었다. 여행을 가지 못하게 된 아쉬운 마음을 달래고자 가고 싶은 나라들을 일러스트로 표현하여 캘린더들 디자인했다.'
     gr.thumbnail= 'gimage/thum/김영경_썸네일.jpg'
     gr.pic= 'gimage/pic/김영경_여행이고프다.jpg'
     gr.picprd= 'gimage/picprd/김영경_연출.png'
@@ -762,7 +763,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='안예은'
     gr.title= '후드덕'
-    gr.description= '‘후드덕’은 오리를 모티브로 한 캐릭터로 모두가 친근하게 받아들일 수 있도록 심플하고 귀엽게 디자인하였다. 옐로우 컬러 를 메인으로 사용해서 포근하며 발랄한 이미지를 주도록 하였다.'
+    gr.description= '‘후드덕’은 오리를 모티브로 한 캐릭터로 모두가 친근하게 받아들일 수 있도록 심플하고 귀엽게 디자인하였다. 옐로우 컬러를 메인으로 사용해서 포근하며 발랄한 이미지를 주도록 하였다.'
     gr.thumbnail= 'gimage/thum/안예은_썸네일.jpg'
     gr.pic= 'gimage/pic/안예은_후드덕.jpg'
     gr.picprd= 'gimage/picprd/안예은_연출.png'
@@ -772,7 +773,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='정예림'
     gr.title= 'People cloz'
-    gr.description= '패션을 좋아하는 누구나 패션 정보를 공유하며 색다른 패션 트렌드를 만들어나가는 공간. AR 카메라, 착장 스케치를 통해 쇼핑도 재밌고 윤택하게 할 수 있는 앱이다. AR 카메라를 통해 옷을 미리 코디해 볼 수 있으며 착장 스케치를 통해 쇼핑하 고자 하는 옷을 코디해 볼 수 있다는 부분이 이 애플리케이션에서 가장 강점인 기능이다.'
+    gr.description= '패션을 좋아하는 누구나 패션 정보를 공유하며 색다른 패션 트렌드를 만들어나가는 공간. AR 카메라, 착장 스케치를 통해 쇼핑도 재밌고 윤택하게 할 수 있는 앱이다. AR 카메라를 통해 옷을 미리 코디해 볼 수 있으며 착장 스케치를 통해 쇼핑하고자 하는 옷을 코디해 볼 수 있다는 부분이 이 애플리케이션에서 가장 강점인 기능이다.'
     gr.thumbnail= 'gimage/thum/정예림_썸네일.jpg'
     gr.pic= 'gimage/pic/정예림_people clo z.jpg'
     gr.picprd= 'gimage/picprd/정예림_연출.png'
@@ -782,7 +783,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='지광민'
     gr.title= '2022 범돌이의 일 년'
-    gr.description= '2022년 호랑이의 해를 맞이해 호랑이 캐릭터 범돌이가 날짜에 맞춰 1년 동안의 사계절을 만끽하며 알차게 살아가는 모습 을 보여주는 캘린더 디자인이다.'
+    gr.description= '2022년 호랑이의 해를 맞이해 호랑이 캐릭터 범돌이가 날짜에 맞춰 1년 동안의 사계절을 만끽하며 알차게 살아가는 모습을 보여주는 캘린더 디자인이다.'
     gr.thumbnail= 'gimage/thum/지광민_2022 범돌이의 일년_썸네일.jpg'
     gr.pic= 'gimage/pic/지광민_2022 범돌이의 일년.jpg'
     gr.picprd= 'gimage/picprd/지광민__연출.png'
@@ -792,7 +793,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='한승희'
     gr.title= 'Zdian sign'
-    gr.description= '밤하늘을 빛내는 별자리를 알리기 위한 인포그래픽을 제작했다. 누구나 쉽게 볼수 있게 일러스트 위주로 제작했으며, 12황 도라 불리는 별자리에는 색을 넣어 그 외의 별자리와 다르게 차별성을 두었다.'
+    gr.description= '밤하늘을 빛내는 별자리를 알리기 위한 인포그래픽을 제작했다. 누구나 쉽게 볼수 있게 일러스트 위주로 제작했으며, 12황도라 불리는 별자리에는 색을 넣어 그 외의 별자리와 다르게 차별성을 두었다.'
     gr.thumbnail= 'gimage/thum/한승희_썸네일.jpg'
     gr.pic= 'gimage/pic/한승희_zodiac sign.jpg'
     gr.picprd= 'gimage/picprd/한승희_연출.png'
@@ -802,7 +803,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='홍성현'
     gr.title= '멜린 초콜릿'
-    gr.description= '달달한 특제 과일 시럽이 특징인 프리미엄 초콜릿 브랜드 ‘Mellin’을 브랜딩한 디자인 작품이다. 대중적이지 않은 과일들 에서 오는 특별한 맛과 친숙한 과일들을 진하게 녹여 낸 시럽처럼 패키지 역시 각각의 과일 모양 속에 통통 튀는 패턴들 이 담겨 있다.'
+    gr.description= '달달한 특제 과일 시럽이 특징인 프리미엄 초콜릿 브랜드 ‘Mellin’을 브랜딩한 디자인 작품이다. 대중적이지 않은 과일들에서 오는 특별한 맛과 친숙한 과일들을 진하게 녹여 낸 시럽처럼 패키지 역시 각각의 과일 모양 속에 통통 튀는 패턴들이 담겨 있다.'
     gr.thumbnail= 'gimage/thum/홍성현_썸네일.jpg'
     gr.pic= 'gimage/pic/홍성현_멜린초콜릿.jpg'
     gr.picprd= 'gimage/picprd/홍성현_연출.png'
@@ -822,7 +823,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='장함'
     gr.title= '청화자'
-    gr.description= '청화자는 중국 도자기의 주류 품종 중 하나로 무늬가 매우 섬세하고 독특하기 때문에 색채가 단일하지만 변화무쌍하며 현대 유행하는 중국 문화 원소이다. 작품과 전통문화 요소를 특색 있는 지역문화를 담은 우표디자인 작품을 제작하였다.'
+    gr.description= '청화자는 중국 도자기의 주류 품종 중 하나로 무늬가 매우 섬세하고 독특하기 때문에 색채가 단일하지만 변화무쌍하며 현대 유행하는 중국 문화 원소이다. 작품과 전통문화 요소를 특색있는 지역문화를 담은 우표디자인 작품을 제작하였다.'
     gr.thumbnail= 'gimage/thum/장함_썸네일.jpg'
     gr.pic= 'gimage/pic/장함_ 청화자.jpg'
     gr.picprd= 'gimage/picprd/장함  _연출.png'
@@ -832,7 +833,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='고벽영'
     gr.title= '나의 즐거운 삶'
-    gr.description= '삶을 주제로 만든 우표로 좋아하는 음식(케이크,콜라,우유 등)과 삶의 일부 모습을 담아 제작한 캐릭터 디자인이다. 색상 은 산뜻하고 심플한 컬러로 구성했다.'
+    gr.description= '삶을 주제로 만든 우표로 좋아하는 음식(케이크,콜라,우유 등)과 삶의 일부 모습을 담아 제작한 캐릭터 디자인이다. 색상은 산뜻하고 심플한 컬러로 구성했다.'
     gr.thumbnail= 'gimage/thum/고벽영_썸네일.jpg'
     gr.pic= 'gimage/pic/고벽영_나의 즐거운 삶.jpg'
     gr.picprd= 'gimage/picprd/고벽영_연출.png'
@@ -842,7 +843,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='우삼청'
     gr.title= '중국의 명경치'
-    gr.description= '중국의 유명한 풍경인 계린산수, 대만 일월담, 안후이 황산, 베경 고궁, 항저우시후, 쑤저우 원림, 창장 산협, 만리장성의 우 표 디자인이다. 중국의 대표적인 풍경들을 골라 우표를 제작하였다.'
+    gr.description= '중국의 유명한 풍경인 계린산수, 대만 일월담, 안후이 황산, 베경 고궁, 항저우시후, 쑤저우 원림, 창장 산협, 만리장성의 우표 디자인이다. 중국의 대표적인 풍경들을 골라 우표를 제작하였다.'
     gr.thumbnail= 'gimage/thum/우삼청_썸네일.jpg'
     gr.pic= 'gimage/pic/우삼청_중극의 명경치.jpg'
     gr.picprd= 'gimage/picprd/우삼청_연출.png'
@@ -852,7 +853,7 @@ def work_insert_gr():
     gr = Work()
     gr.artist='임운유'
     gr.title= '경극'
-    gr.description= '중국 전통 경극은 세계 각지를 돌아다니며 중국 전통예술 문화를 소개하고 전파하는 중요한 매개체이다. 이 경극을 모티브 로 중국적 특색을 살리고 경극적 요소를 가미한 우표 디자인이다.'
+    gr.description= '중국 전통 경극은 세계 각지를 돌아다니며 중국 전통예술 문화를 소개하고 전파하는 중요한 매개체이다. 이 경극을 모티브로 중국적 특색을 살리고 경극적 요소를 가미한 우표 디자인이다.'
     gr.thumbnail= 'gimage/thum/임운유_썸네일.jpg'
     gr.pic= 'gimage/pic/임운유_경극우표.jpg'
     gr.picprd= 'gimage/picprd/임운유_연출.png'
@@ -866,6 +867,294 @@ def work_insert_gr():
         else:
             x.save()
 
+def work_insert_me():
+    media_list = []
+
+    me = Work()
+    me.artist= '민경서, 박효정'
+    me.title= '시선을 바꾸면 세상이 보인다'
+    me.description= '세계 여러 나라의 중소기업에 대한 인식 차이를 보여주고, 중소기업의 사회적 역할과 가치를 바로 알리기 위한 영상이다. 개성있는 캐릭터와 보라색 계열의 메인 컬러, 노란색의 포인트 컬러를 사용하여 모션그래픽으로 표현했다.'
+    me.thumbnail= 'mimage/thum/민경서,박효정_썸네일.jpg'
+    me.pic= 'mimage/pic/민경서,박효정_시선을 바꾸면 세상이 보인다.jpg'
+    me.youtube= 'https://www.youtube.com/embed/Q5OL_ghmJv0'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '민경서'
+    me.title= '낙서'
+    me.description= '서로의 감정이 무뎌져 마치 종잇장위의 낙서처럼 얼룩져가고 흐려지는 연인에 대한 상실감을 낙서를 통해 풀어낸 노래로 가사에 맞는 라인드로잉을 모션그래픽으로 제작하였다. 베이지와 블루, 회색을 사용하여 식은 연인들의 마음을 표현했다.'
+    me.thumbnail= 'mimage/thum/민경서_썸네일.jpg'
+    me.pic= 'mimage/pic/민경서_낙서.jpg'
+    me.youtube= 'https://www.youtube.com/embed/7Y-Anvjk6VY'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '강민혁, 정명현'
+    me.title= '아버지'
+    me.description= '본 영상은 KB 국민은행의 애니메이션 광고이다. 아버지와 그를 그리워하는 아들의 스토리를 담았고, 아버지를 그림자로 표현해 가는 길을 함께 걸어가고 있다는 것으로 모든 아버지의 희생과 든든함을 보여주는 작품이다.'
+    me.thumbnail= 'mimage/thum/강민혁,정명현_썸네일.jpg'
+    me.pic= 'mimage/pic/강민혁, 정명현_아버지.jpg'
+    me.youtube= 'https://www.youtube.com/embed/yZhY6qRzfpE'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '강민혁, 정명현'
+    me.title= '중소기업, 다시 바라보기'
+    me.description= '본 영상은 중소기업 인식 개선을 위한 인포그래픽 영상이다. 99.83%라는 국내 중소기업의 막대한 비율을 소개하는 것을 시작으로 중소기업만의 혜택, 장점들을 다양한 애니메이션 함께 담아내었다.'
+    me.thumbnail= 'mimage/thum/강민혁,정명현_중소기업 다시 바라보기_썸네일_웹.jpg'
+    me.pic= 'mimage/pic/강민혁,정명현_중소기업 다시 바라보기_보드_웹.jpg'
+    me.youtube= 'https://www.youtube.com/embed/UNfkwcn09zY'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '류호경, 김선식'
+    me.title= '창귀'
+    me.description= '안예은의 ‘창귀’를 남성 유튜버 싱여가 커버한 곡이다. 무섭고 기괴하게 드로잉하여 노래의 분위기에 모션그래픽과 로토스코핑으로 작업하였고, 색감은 검은색과 빨간색으로 주워 원곡의 컨셉을 버리지 않고 한국의 전설을 보여주는 작품이다.'
+    me.thumbnail= 'mimage/thum/류호경,-김선식_썸네일.jpg'
+    me.pic= 'mimage/pic/류호경, 김선식_창귀.jpg'
+    me.youtube= 'https://www.youtube.com/embed/Nh9KZtqOlzU'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '류호경'
+    me.title= '낙원의 밤 예고편'
+    me.description= '‘낙원의 밤’은 상대편 조직의 보스를 죽이는 핏빛 복수극을 그린 영화이다. 범죄물이기 때문에 무겁고 어두운 분위기를 주기위해 블랙바탕에 화이트 드로잉을 주었고, 포인트 레드를 사용해 인물간에 분위기를 조정한 로토스코핑 애니메이션이다.'
+    me.thumbnail= 'mimage/thum/류호경_썸네일(1).jpg'
+    me.pic= 'mimage/pic/류호경_낙원의 밤 예고편.jpg'
+    me.youtube= 'https://www.youtube.com/embed/abt2JI0BVfU'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '류호경'
+    me.title= 'I Love Kiss'
+    me.description= '전 세계적인 인지도와 높은 인기를 보유하고 있는 안나수이의 립스틱 홍보 영상이다. 라인 일러스트로 로토스코핑과 모션그래픽으로 립스틱의 색을 강조하였고, 립스틱 색과 잘 어울릴 수 있는 꽃을 선정해 모션 그래픽 애니메이션으로 제작했다.'
+    me.thumbnail= 'mimage/thum/류호경_썸네일.jpg'
+    me.pic= 'mimage/pic/류호경_I Love Kiss.jpg'
+    me.youtube= 'https://www.youtube.com/embed/B8nzbkuRuUA'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '정명현'
+    me.title= '서울의 잠 못 이루는 밤'
+    me.description= '10cm의 ‘서울의 잠 못 이루는 밤’을 키네틱 타이포로 제작했다. 통일감을 위해 노래의 분위기와 잘 어울리는 컬러를 사용하였고 가사에 어울리는 다양하고 부드러운 모션을 이용해 노래를 재미있게 풀어냈다.'
+    me.thumbnail= 'mimage/thum/정명현_썸네일.jpg'
+    me.pic= 'mimage/pic/정명현_서울의 잠 못 이루는 밤.jpg'
+    me.youtube= 'https://www.youtube.com/embed/iGF3aunS1MI'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '박효정'
+    me.title= '누구없소'
+    me.description= '이 영상은 검은색과 밝은 베이지색, 그리고선을 메인으로 사용한 모션그래픽이다. 가사에 따라 어우러지는 일러스트와 기타의 리듬에 맞춰모션을 적용하였고 물결과 달의 일러스트를 중심으로 제작하였다.'
+    me.thumbnail= 'mimage/thum/박효정_썸네일.jpg'
+    me.pic= 'mimage/pic/박효정_누구없소.jpg'
+    me.youtube= 'https://www.youtube.com/embed/Hj1weHU21E0'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '박주이, 원도윤'
+    me.title= '중소기업 제대로 알리기'
+    me.description= '대기업 같았던 빅히트 엔터테인먼트가 사실은 중소기업으로, 알고 있던 중소기업과는 전혀 다른 이미지다. 그래서 중소기업에 대해 제대로 알리기 위해 중소기업의 의미, 혜택을 자세히 알려 중소기업의 이미지를 개선하려고 한다.'
+    me.thumbnail= 'mimage/thum/박주이, 원도윤_썸네일.jpg'
+    me.pic= 'mimage/pic/박주이, 원도윤_중소기업제대로알리기.jpg'
+    me.youtube= 'https://www.youtube.com/embed/9bVou7S6vO4'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '원도윤, 박주이'
+    me.title= '옥탑방'
+    me.description= '밴드 N.flying의 노래 옥탑방을 키네틱타이포로 만든 영상이다. 옥탑방은 옥상에 나란히 걸터앉아 함께 밤하늘을 보던 연인과 이별 후의 서정적인 감성을 담아낸 곡이다. 이러한 분위기를 표현하기 위해 3가지의 컬러로 키네틱타이포를 제작했다.'
+    me.thumbnail= 'mimage/thum/원도윤, 박주이_썸네일.jpg'
+    me.pic= 'mimage/pic/원도윤, 박주이_옥탑방.jpg'
+    me.youtube= 'https://www.youtube.com/embed/pBqQbPtrvgU'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '신혜현'
+    me.title= '카누'
+    me.description= '상품 ‘카누’를 주제로 한 2D 애니메이션이다. 하루 중 가장 지친 시간인 오후 3시, 나만을 위해 준비된 작은 카페에서 카누 한 잔을 마시며 잠시나마 여행을 즐기듯 여유롭고 행복한 순간이 찾아온다는 것을 여행지로 표현했다.'
+    me.thumbnail= 'mimage/thum/신혜현_썸네일(1).jpg'
+    me.pic= 'mimage/pic/신혜현_카누.jpg'
+    me.youtube= 'https://www.youtube.com/embed/aPtEwZ9suuk'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '신혜현'
+    me.title= '놀이터'
+    me.description= '이 영상은 놀이터에 있는 놀이 기구의 움직임을 모티브 한 모션그래픽이다. 도형과 선을 활용하여 역동적인 노래에 맞춰 활발한 움직임을 줌으로써 어렸을 때 놀이터에서 놀던 추억들이 생각나게끔 하는 요소가 담겨있다.'
+    me.thumbnail= 'mimage/thum/신혜현_썸네일.jpg'
+    me.pic= 'mimage/pic/신혜현_놀이터.jpg'
+    me.youtube= 'https://www.youtube.com/embed/XZc-H7R3IvA'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '오동우'
+    me.title= '스위트홈'
+    me.description= 'Netflix 드라마 ‘스위트홈’을 레드 컬러와 블랙 컬러를 사용하여 강렬한 느낌을 주는 애니메이션으로 스위트홈의 등장인물들을 로토스코핑 기법과 핸드드로잉으로 제작하였다.'
+    me.thumbnail= 'mimage/thum/오동우_썸네일.jpg'
+    me.pic= 'mimage/pic/오동우_스위트홈.jpg'
+    me.youtube= 'https://www.youtube.com/embed/BGnIvB1DZCo'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '신유찬'
+    me.title= '우리는 변화한다'
+    me.description= '중소기업이 제공하는 다양한 복지를 보여주며 사회적 책임, 근로자 노동 가치 존중, 훌륭한 직장 문화를 가지고 있다는 것을 보여주는 영상이다. 전체적인 색감을 통일해 편안함을 주었고, 공감 소재를 활용해 즐거움을 느낄 수 있도록 제작했다.'
+    me.thumbnail= 'mimage/thum/신유찬_썸네일.jpg'
+    me.pic= 'mimage/pic/신유찬_우리는 변화한다.jpg'
+    me.youtube= 'https://www.youtube.com/embed/9nZCZ7gBsRg'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '김예지'
+    me.title= '한복을 알리다'
+    me.description= '우리나라의 한복을 알리기 위해 제작한 인포그래픽이다. 한복의 구성, 시대에 따른 형태, 상황 등에 따라 달라지는 한복을 보여주고 설명해준다.'
+    me.thumbnail= 'mimage/thum/김예지_썸네일(1).jpg'
+    me.pic= 'mimage/pic/김예지_한복을 알리다.jpg'
+    me.youtube= 'https://www.youtube.com/embed/d4VK5Bx4By4'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '김예지'
+    me.title= '중소기업의 힘'
+    me.description= '우리나라의 중소기업 중 K-뷰티 중소기업에 중점을 두고 제작한 인포그래픽이다. K-뷰티 산업의 전체적인 흐름을 설명한 뒤, 어떠한 중소기업들이 있고 그 중소기업들은 어떤 기술을 가지고 발전해나가고 있는지 보여준다.'
+    me.thumbnail= 'mimage/thum/김예지_썸네일.jpg'
+    me.pic= 'mimage/pic/김예지_중소기업의 힘.jpg'
+    me.youtube= 'https://www.youtube.com/embed/59pRk-t1SyM'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '전예린'
+    me.title= '기묘한 이야기'
+    me.description= '‘기묘한 이야기’는 80년대 미국을 배경으로 한 넷플릭스 시리즈의 오프닝 시퀀스 애니메이션이다. 스릴러 컨셉의 강렬함과 개성을 강조하기 위해 블랙과 레드 컬러로 통일감을 주었고, 핸드드로잉 기법을 이용해 표현했다.'
+    me.thumbnail= 'mimage/thum/전예린_썸네일.jpg'
+    me.pic= 'mimage/pic/전예린_기묘한 이야기(Stranger things).jpg'
+    me.youtube= 'https://www.youtube.com/embed/Q6Up3ywUV5k'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '김나영'
+    me.title= '새들이 울었던 자리가 있다'
+    me.description= '주희 작가의 ‘새들이 울었던 자리가 있다’라는 시의 사람도 새처럼 삶의 고단함과 쉬어간다는 메시지를 새의 노래와 날개짓, 나무에서 쉬어가는 모습을 라인드로잉 기법으로 제작했다.'
+    me.thumbnail= 'mimage/thum/김나영_썸네일.jpg'
+    me.pic= 'mimage/pic/김나영_새들이 울었던 자리가 있다.jpg'
+    me.youtube= 'https://www.youtube.com/embed/E3T-8ecSY-8'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '김나영, 한승희'
+    me.title= '괜찮은 중소기업 어플'
+    me.description= '‘참 괜찮은 중소기업 앱’을 홍보하고 많은 취업 준비생들과 청년들을 응원하기 위해 앱의 좋은 기능 4가지를 소개하며 함께 괜찮은 중소기업을 도전해 보자는 의미에서 인포그래픽을 제작한 영상이다.'
+    me.thumbnail= 'mimage/thum/김나영,한승희_썸네일.jpg'
+    me.pic= 'mimage/pic/김나영,한승희_참 괜찮은 중소기업 어플.jpg'
+    me.youtube= 'https://www.youtube.com/embed/7T5Mm9_IL6Y'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '김다은'
+    me.title= 'Luxury day'
+    me.description= '밀튼 스텔리는 이태리의 시계 브랜드로 고풍스럽고 클래식한 디자인과 트랜드 패션 디자인 시계들이 함께 어우러져있다. 시계와 캐릭터들 간의 색상을 비슷하게 표현하여 화려하면서도 지나치게 튀지 않고 조화로워 보이도록 디자인했다.'
+    me.thumbnail= 'mimage/thum/김다은, 홍성현_썸네일.jpg'
+    me.pic= 'mimage/pic/김다은, 홍성현_Luxury Day.jpg'
+    me.youtube= 'https://www.youtube.com/embed/7nwrVcz0u2A'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '안예은'
+    me.title= 'SEASON'
+    me.description= '계절의 특징을 나타내 언제든지 알맞은 의상을 골라 입을 수 있다는 것을 보여주었다. 변화를 크게 주기 위해 다양한 컬러를 사용하여 여러 의상과 계절별 풍경을 표현하였다.'
+    me.thumbnail= 'mimage/thum/안예은_썸네일.jpg'
+    me.pic= 'mimage/pic/안예은_SEASON.jpg'
+    me.youtube= 'https://www.youtube.com/embed/nHKuzyh6QwM'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '정예림, 한승희'
+    me.title= 'KARMA'
+    me.description= 'AMPSTYLE과 초희가 결성한 프로젝트 밴드, 달의하루가 애니메이터 람다람과 콜라보한 노래이다. 아이보리, 네이비, 핑크 세 가지 색상만으로 심플하게 작업하였으며 간단한 오브제들을 사용하여 키네틱타이포로 역동적이게 제작하였다.'
+    me.thumbnail= 'mimage/thum/정예림,한승희_썸네일.jpg'
+    me.pic= 'mimage/pic/정예림,한승희_KARMA.jpg'
+    me.youtube= 'https://www.youtube.com/embed/8RwotN3A7gA'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '홍성현, 김다은'
+    me.title= '참 괜찮은 중소기업'
+    me.description= '청년들의 구인구직이 어려운 가운데, 중소 벤처기업부에서 새롭게 선보이는 개인 맞춤형 구인구직 플랫폼인‘괜찮은 중소기업’사이트와 애플리케이션을 홍보하는 목적으로 제작한 인포그래픽 애니메이션이다.'
+    me.thumbnail= 'mimage/thum/홍성현,김다은_썸네일.jpg'
+    me.pic= 'mimage/pic/홍성현,김다은_참 괜찮은 중소기업.jpg'
+    me.youtube= 'https://www.youtube.com/embed/I98vASNEjcg'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '무함마드 나우팔'
+    me.title= 'LEVITATING'
+    me.description= '이 곡의 가사는 사랑에 빠졌을 때 ‘Levitating’이라는 개념을 여러 우주 밖에서 언급하고 있다. 복고풍 느낌과 잘 어울리는 분홍색과 보라색으로 컬러를 선정하여 키네틱타이포그래피를 만들었다.'
+    me.thumbnail= 'mimage/thum/나우팔_썸네일.jpg'
+    me.pic= 'mimage/pic/나우팔_LEVITATING.jpg'
+    me.youtube= 'https://www.youtube.com/embed/WEAAUC86Chs'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '적일적, 고벽영'
+    me.title= 'THE LAZY SONG'
+    me.description= '‘The Lazy Song’은 미국의 팝 가수 브루노 마스가 부른 노래이다. 현란한 색채와 역동적인 동작으로 그 곡을 연출했다. 해당 곡이 가진 발랄함과 빠른 리듬감을 표현했다.'
+    me.thumbnail= 'mimage/thum/적일적,고벽영_썸네일.jpg'
+    me.pic= 'mimage/pic/적일적,고벽영_THE LAZY SONG.jpg'
+    me.youtube= 'https://www.youtube.com/embed/SMqvfELGV70'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '우삼청, 장함'
+    me.title= 'Tik Tok'
+    me.description= '틱톡은 요즘 유행하는 동영상 서비스로 많은 사람들이 이용한다. 이 동영상은 틱톡과 사람과의 관계, 사람들이 틱톡을 일상적으로 사용하는 방식으로 틱톡을 홍보한다.'
+    me.thumbnail= 'mimage/thum/우삼청,장함 _썸네일.jpg'
+    me.pic= 'mimage/pic/우삼청,장함 _Tik Tok.jpg'
+    me.youtube= 'https://www.youtube.com/embed/s4dKYUAL5ZI'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    me = Work()
+    me.artist= '국정, 임운유'
+    me.title= 'Shape of you'
+    me.description= '영국 남자 가수 에드시런이 부른 팝송이다. 영상 속 밝은 파란색과 빨간색으로 강조를 하고, 3D 모델링 기술과 핸드페인팅 기술이 적용되었으며 재미있는 그래픽 애니메이션이 많이 들어가 있어 재미있는 경험을 선사할 수 있다.'
+    me.thumbnail= 'mimage/thum/국정,임운유_ 썸네일.jpg'
+    me.pic= 'mimage/pic/국정,임운유_ shape of you.jpg'
+    me.youtube= 'https://www.youtube.com/embed/qgcIfFiNRSE'
+    me.wtype=Type.objects.get(wtype = 'me')
+    media_list.append(me)
+
+    for x in media_list:
+        if Work.objects.filter(title=x.title).exists(): #새로고침 시 중복체크
+            pass
+        else:
+            x.save()
 
 
 def data_insert():
