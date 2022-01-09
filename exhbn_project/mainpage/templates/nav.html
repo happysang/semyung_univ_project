@@ -102,21 +102,21 @@
         <li style="width: 10%;"></li> <!--공백-->
   
         <li class="nav-item">
-          <a class="nav-link" href="{%url 'home' %}" style="color: black; font-weight: 600; font-size: 25px; ">Spoiler</a>
+          <strong><a class="nav-link" href="{%url 'home' %}" style="color: black; font-weight: 600; font-size: 25px; ">Spoiler</a></strong>
         </li>
       
         <li style="width: 50%;"></li> <!--공백-->
   
         <li class="nav-item">
-          <a class="nav-link" href="{%url 'about' %}" style="color: black; font-weight: 400;">About</a>
+          <strong><a class="nav-link" href="{%url 'about' %}" style="color: black; font-weight: 400;">About</a></strong>
         </li>
       
         <li class="nav-item">
-          <a class="nav-link" href="{%url 'allprofile' %}" style="color: black; font-weight: 400;">Designers</a>
+          <strong><a class="nav-link" href="{%url 'allprofile' %}" style="color: black; font-weight: 400;">Designers</a></strong>
         </li>
       
         <li class="nav-item dropdown">
-          <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black; font-weight: 400;">Works</a>
+          <strong><a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black; font-weight: 400;">Works</a></strong>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{%url 'works' 'gr' %}">그래픽</a></li>
             <li><a class="dropdown-item" href="{%url 'works' 'ad' %}">광고</a></li>
@@ -133,7 +133,7 @@
         <source src="{% static '배경영상.mp4' %}" type="video/mp4">
       </video>
       <div class="text">
-        <p>{{ttt}}</p>
+        <strong><p>{{ttt}}</p></strong>
       </div>
     </div>
 
