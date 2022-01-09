@@ -8,24 +8,29 @@ def home(request):
 def allprofile(request):
     data_insert()
     allfile = Profile.objects.all()
-    return render (request, 'allprofile.html', {'allfile':allfile})
+    ttt = 'Designer'
+    return render (request, 'allprofile.html', {'allfile':allfile, 'ttt':ttt})
 
 def detailprofile(request,each_id):
     detail_obj = get_object_or_404(Profile, pk = each_id)
     allwork = Work.objects.all()
-    return render (request, 'detailprofile.html', {'ppp':detail_obj, 'works':allwork})
+    ttt = 'Designer'
+    return render (request, 'detailprofile.html', {'ppp':detail_obj, 'works':allwork, 'ttt':ttt})
 
 def about(request):
-    return render (request, 'about.html')
+    ttt = 'About'
+    return render (request, 'about.html', {'ttt':ttt})
 
 def worksall(request): #all
     works = Work.objects.all()
-    return render (request, 'works.html', {'works': works})
+    ttt = 'Works'
+    return render (request, 'works.html', {'works': works, 'ttt':ttt})
 
 def works(request, wtype): #gd / ad / media
     new_wtype = Type.objects.get(wtype = wtype)
     works = Work.objects.filter(wtype = new_wtype)
-    return render (request, 'works.html', {'works': works, 't': wtype})
+    ttt = 'Works'
+    return render (request, 'works.html', {'works': works, 't': wtype, 'ttt':ttt})
 
 def work_detail(request, pk): # type1 광고 디자인 ad type2 영상 애니메이션 me type3 그래픽 디자인 gr
     work = Work.objects.filter(pk=pk)
@@ -34,11 +39,14 @@ def work_detail(request, pk): # type1 광고 디자인 ad type2 영상 애니메
     wtypeStr = wtypeObj.wtype # ad / me / gr
     print("wtypeStr: "+wtypeStr)
     if wtypeStr == 'ad':
-        return render (request, 'work_detail.html', {'work': work})
+        ttt = 'Advertising Design'
+        return render (request, 'work_detail.html', {'work': work, 'ttt':ttt})
     elif wtypeStr == 'me':
-        return render (request, 'work_detail2.html', {'work': work})
+        ttt = 'Video Animation'
+        return render (request, 'work_detail2.html', {'work': work, 'ttt':ttt})
     elif wtypeStr == 'gr':
-        return render (request, 'work_detail3.html', {'work': work})
+        ttt = 'Graphic Design'
+        return render (request, 'work_detail3.html', {'work': work,'ttt':ttt})
 
 def work_detail_static(request):
     return render(request, 'work_detail_static.html')
