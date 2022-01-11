@@ -3,6 +3,7 @@
 {% load static %}
 
 
+
 <div class="container">
 <table style="border:none">
     <tr>
@@ -19,9 +20,9 @@
                 </div>
             </div>
             <div class="card-body" style= "margin: 0; padding: 0; width:278px; text-align: left;">
-                <h5 class="card-title">{{ppp.name}}</h5>
-                <p class="card-text">{{ppp.eng_name}}</p>
-                <p class="card-text">{{ppp.email}}</p>
+                <h6 class="card-title">{{ppp.name}}</h6>
+                <small style="color: grey;"><p class="card-text">{{ppp.eng_name}}</p></small>
+                <small style="color: grey;"><p class="card-text">{{ppp.email}}</p></small>
             </div>
         </td>
 
@@ -32,14 +33,15 @@
                 {% for works in works %}
                 {% if ppp.name in works.artist %}
                 <div class="col">
-                    <div class="card h-100" style="border:0; outline:0; width: 45%;">
-                        <div style="text-align: center;">
+                    <div class="card h-100" style="border:0; outline:0;">
+                        <div style="text-align: left;">
                             <a href="{% url 'work_detail' works.pk %}"><img src = "{% static works.thumbnail %}" width="278" height="208"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
                         </div>
 
-                        <div class="card-body" style= "text-align:left; margin: 0; padding: 0;">
-                            <h5 class="card-title">{{works.title}}</h5>
-                            <p class="card-text">{{works.artist}}</p>
+                        <div class="card-body" style= "text-align:left; margin: 0; padding: 0; font-size: medium;">
+                            <strong class="card-title">{{works.title}}</strong>
+                            <small style="color: grey;"><p class="card-text">{{works.artist}}</p></small>
+                            <br>
                         </div>
                     </div>
                 </div>
