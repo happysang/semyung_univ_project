@@ -2,20 +2,19 @@
 {% block content %}
 {% load static %}
 
-<table width="100%" style="text-align:center; border:none">
+
+<div class="container">
+<table style="border:none">
     <tr>
-        <td colspan="2" style="background-color:white" height="160"></td><!--여백용-->
+        <td colspan="2" style="background-color:white" height="160"></td> <!--여백용-->
     </tr>
   
     <tr>
-        <td>
-            <td style="background-color:white; width:7%"></td><!--여백용-->
-        </td>
-
-
-        <td>
-            <div class="card h-100" style="border:0; outline:0; width: 278px;"> <!--card의 선을 없앴다.-->
-                <div style="text-align: center;"> <!--사진을 가운데에 오게하기 위해 center 속성을 가진 div태그로 감쌌다.-->
+        <td style="background-color:white; width:5%"></td>
+        
+        <td style="width: 40%;">
+            <div class="card h-100" style="border:0; outline:0;"> <!--card의 선을 없앴다.-->
+                <div style="text-align: left;"> <!--사진을 가운데에 오게하기 위해 center 속성을 가진 div태그로 감쌌다.-->
                     <a><img src = "{% static ppp.pimage %}" width="342" height="512"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
                 </div>
             </div>
@@ -26,16 +25,14 @@
             </div>
         </td>
 
-        <td>
-            <td style="background-color:white; width:20%"></td><!--여백용-->
-        </td>
+        <!-- <td style="background-color:white; width:5%"></td>여백용 -->
 
-        <td style="text-align:center;">
+        <td style="width: 50%;">
             <div class="row row-cols-1 row-cols-md-2 g-2">
                 {% for works in works %}
                 {% if ppp.name in works.artist %}
                 <div class="col">
-                    <div class="card h-100" style="border:0; outline:0; width: 278px;">
+                    <div class="card h-100" style="border:0; outline:0; width: 45%;">
                         <div style="text-align: center;">
                             <a href="{% url 'work_detail' works.pk %}"><img src = "{% static works.thumbnail %}" width="278" height="208"></a> <!--330*480사이즈인데 10프로씩 사이즈를 줄였다.-->
                         </div>
@@ -50,10 +47,7 @@
                 {% endfor %}
             </div>
         </td>
-
-        <td>
-            <td style="background-color:white; width:5%"></td><!--여백용-->
-        </td>
+        <td style="background-color:white; width:5%"></td>
     </tr>
     
     <tr>
@@ -68,4 +62,5 @@
         </td>
     </tr> -->
 </table>
+</div>
 {% endblock %}
