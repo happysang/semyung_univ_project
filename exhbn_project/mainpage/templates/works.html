@@ -42,27 +42,27 @@
 
 <div class="d-flex p-2 bd-highlight justify-content-center">
 
-  <div class="p-2 bd-highlight">
+  <div class="p-2 bd-highlight" style="margin: 0.75rem;">
     {% if t in 'gr' %}
-    <a href="{%url 'works' 'gr' %}" class="clist2" style="border-bottom: 0.25rem solid #e26e84;">그래픽디자인</a>
+    <a href="{%url 'works' 'gr' %}" class="clist2" style="border-bottom: 0.25rem solid #e26e84; padding:0.25rem;">그래픽디자인</a>
     {% else %}
-    <a href="{%url 'works' 'gr' %}" class="clist">그래픽디자인</a>
+    <a href="{%url 'works' 'gr' %}" class="clist" style="padding:0.25rem;">그래픽디자인</a>
     {% endif %}
     
   </div>
 
-  <div class="p-2 bd-highlight">
+  <div class="p-2 bd-highlight" style="margin: 0.75rem;">
     {% if t in 'ad' %}
-    <a href="{%url 'works' 'ad' %}" class="clist2" style="border-bottom: 0.25rem solid #e26e84;">광고디자인</a>
+    <a href="{%url 'works' 'ad' %}" class="clist2" style="border-bottom: 0.25rem solid #e26e84; padding:0.25rem;">광고디자인</a>
     {% else %}
-    <a href="{%url 'works' 'ad' %}" class="clist" >광고디자인</a>
+    <a href="{%url 'works' 'ad' %}" class="clist" style="padding:0.25rem;">광고디자인</a>
     {% endif %}
   </div>
-  <div class="p-2 bd-highlight">
+  <div class="p-2 bd-highlight" style="margin: 0.75rem;">
     {% if t in 'me' %}
-    <a href="{%url 'works' 'me' %}" class="clist2" style="border-bottom: 0.25rem solid #e26e84;">영상 애니메이션</a>
+    <a href="{%url 'works' 'me' %}" class="clist2" style="border-bottom: 0.25rem solid #e26e84; padding:0.25rem;">영상 애니메이션</a>
     {% else %}
-    <a href="{%url 'works' 'me' %}" class="clist" >영상 애니메이션</a>
+    <a href="{%url 'works' 'me' %}" class="clist" style="padding:0.25rem;">영상 애니메이션</a>
     {% endif %}
   </div>
 </div>
@@ -72,14 +72,14 @@
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-4 gx-4 gy-5">
     {% for works in works %}
     {% if works %}
-    <div class="col-sm-3">
+    <div class="col-sm-3" style="margin-top: 5rem;">
       <a href="{% url 'work_detail' works.pk %}" style="text-decoration-line: none;">
         <div class="card h-100" style="max-width: 22rem; width: 18rem; border:0; ">
             <!-- <img src="{{ works.thumbnail.url }}" class="card-img-top" style="height:12rem;" alt="..."> -->
             <img src="{% static works.thumbnail %}" class="card-img-top" style="height:12rem;" alt="...">
-            <p class="card-text" style="font-size: 0.8em;"></p> <!-- 공백 -->
-            <p class="card-text" style="font-size: 1.1em; font-weight: bold; color: #222234;">{{ works.title }}</p>
-            <p class="card-text" style="font-size: 0.8em; color: #666 ">{{ works.artist }}</p>
+            <p class="card-text" style="font-size: 0.7em;"></p> <!-- 공백 -->
+            <p class="card-text" style="font-size: 1.5em; font-weight: bold; color: #222234; margin-bottom: 2px;">{{ works.title }}</p>
+            <p class="card-text" style="font-size: 1.125em; color: #666 ">{{ works.artist }}</p>
         </div>
       </a>
     </div>
