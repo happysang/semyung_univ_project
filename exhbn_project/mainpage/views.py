@@ -43,6 +43,20 @@ def work_detail(request, pk): # type1 광고 디자인 ad type2 영상 애니메
         return render (request, 'work_detail.html', {'work': work, 'ttt':ttt})
     elif wtypeStr == 'me':
         ttt = 'Video Animation'
+        print(work[0])
+        if "Shape" in work[0].title:
+            return render (request, 'work_detail2_shape.html', {'work': work, 'ttt':ttt})
+        if "LEVIT" in work[0].title:
+            return render (request, 'work_detail2_levit.html', {'work': work, 'ttt':ttt})
+        if "놀이터" in work[0].title:
+            return render (request, 'work_detail2_nol.html', {'work': work, 'ttt':ttt})
+        if "스위트" in work[0].title:
+            return render (request, 'work_detail2_sweet.html', {'work': work, 'ttt':ttt})
+        if "LAZY" in work[0].title:
+            return render (request, 'work_detail2_lazy.html', {'work': work, 'ttt':ttt})
+        if "SEASON" in work[0].title:
+            return render (request, 'work_detail2_season.html', {'work': work, 'ttt':ttt})
+
         return render (request, 'work_detail2.html', {'work': work, 'ttt':ttt})
     elif wtypeStr == 'gr':
         ttt = 'Graphic Design'
