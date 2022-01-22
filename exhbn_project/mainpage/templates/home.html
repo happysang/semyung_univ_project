@@ -9,6 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spoiler</title>
   <style>
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    
+    body{
+      font-family: "Noto Sans KR", sans-serif !important;
+    }
     .dropdown:hover .dropdown-menu {
       display: block;
       margin-top: 0;
@@ -41,6 +46,22 @@
       background-color: #d47cb4;
       width: 100%;
     }
+
+.whiteColor {
+  color:#fff;
+}
+.seoknav * {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+.nav-item a:hover{
+  color:yellow;
+}
+
   </style>
 </head>
 
@@ -51,18 +72,18 @@
 <div class="fix">
   <div class="container d-flex flex-wrap justify-content-center">
     <a href="{%url 'home' %}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-      <svg class="bi me-2" width="0" height="55"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-4"><strong>Spolier</strong></span>
+      <svg class="bi me-2" width="0" height="72"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-4"><img src="{% static 'logo.png' %}" alt="" style="width:100px; height:40px;"></span>
     </a>
-    <ul class="nav">
-      <li class="nav-item"><a href="{%url 'about' %}" class="nav-link link-dark px-2">About</a></li>
-      <li class="nav-item"><a href="{%url 'allprofile' %}" class="nav-link link-dark px-2">Designers</a></li>
-      <li class="nav-item dropdown">
-        <strong><a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black; font-weight: 400;">Works</a></strong>
+    <ul class="nav seoknav">
+      <li class="nav-item" style=" margin:auto; padding-right:16px; padding-left:16px;"><a href="{%url 'about' %}" class="nav-link px-2 whiteColor">About</a></li>
+      <li class="nav-item" style=" margin:auto; padding-right:16px; padding-left:16px;"><a href="{%url 'allprofile' %}" class="nav-link px-2 whiteColor">Designers</a></li>
+      <li class="nav-item dropdown" style="margin:auto;">
+        <strong><a class="nav-link whiteColor" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Works</a></strong>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="{%url 'works' 'gr' %}">그래픽</a></li>
-          <li><a class="dropdown-item" href="{%url 'works' 'ad' %}">광고</a></li>
-          <li><a class="dropdown-item" href="{%url 'works' 'me' %}">미디어</a></li>
+          <li><a class="dropdown-item" href="{%url 'works' 'gr' %}" style="color:#222234">그래픽디자인</a></li>
+          <li><a class="dropdown-item" href="{%url 'works' 'ad' %}" style="color:#222234">광고디자인</a></li>
+          <li><a class="dropdown-item" href="{%url 'works' 'me' %}" style="color:#222234">영상애니메이션</a></li>
         </ul>
       </li>      
     </ul>

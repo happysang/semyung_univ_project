@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <head>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -8,34 +8,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spoiler</title>
+
   <style>
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
     .dropdown:hover .dropdown-menu {
       display: block;
       margin-top: 0;
     }
 
     .bg {
-      height: 400px;
+      width:100%;
+      height: 560px;
       overflow: hidden;
       margin: 0px auto;
       position: relative;
-      z-index: 1;
+      z-index: 0;
+
+
     }
     video {
       width: 100%;
+      height: 560px;
+      object-fit: cover;
+      z-index:-1;
+      position: absolute;
     }
     .text {
-      position: absolute;
-      width: 100%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-    }
-    .text p {
+      margin: 0 auto;
+      padding-top:252px;
+
+      font-size: calc(1.4rem + 1.8vw);
+
+      {% comment %} width: 700px; {% endcomment %}
+      z-index: 100;
+      text-align:center;
+
+      font-size: calc(1.4rem + 1.8vw);
+      {% comment %} font-size: 60px; {% endcomment %}
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.25px;
       text-align: center;
-      font-size: 48px;
-      color: #ffffff;
+      color: #fff;
+
+
     }
+
     .fix {
       position: fixed;
       background-color: rgba( 255, 255, 255, 0 );
@@ -47,11 +68,12 @@
     }
 
     body{
+      font-family: "Noto Sans KR", sans-serif !important;
       animation: fadein 1000ms ease-out;
       -moz-animation: fadein 1000ms ease-out; /* Firefox */
       -webkit-animation: fadein 1000ms ease-out; /* Safari and  Chrome */
       -o-animation: fadein 1000ms ease-out; /* Opera */
-      font-family:  'Noto Sans KR', sans-serif;
+      /* font-family:  'Noto Sans KR', sans-serif; */
     }
     @keyframes fadein {
         from {opacity:0;}
@@ -70,9 +92,72 @@
         to {opacity: 1;}
     }
   </style>
-<script>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-</script>
+
+
+  <script>
+    $(function(){
+      var $header = $('.fix'); //헤더를 변수에 넣기
+      var $page = $('.page-start'); //색상이 변할 부분
+      var $window = $(window);
+      var pageOffsetTop = $page.offset().top-90;//색상 변할 부분의 top값 구하기
+      
+      var $change1 = $('.change1');
+
+      var $changeDisplay1 = $('.changeDisplay1');
+      var $changeDisplay2 = $('.changeDisplay2');
+
+      $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
+        pageOffsetTop = $page.offset().top-90;
+      });
+      
+      $window.on('scroll', function(){ //스크롤시
+        var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+        var scrolled2 = $window.scrollTop() < pageOffsetTop;
+        $header.toggleClass('down', scrolled); //클래스 토글
+  
+  $change1.toggleClass('whiteColor', scrolled2);
+          $change1.toggleClass('changeColor', scrolled);
+        
+
+          $changeDisplay1.toggleClass('displayNone', scrolled);
+          $changeDisplay2.toggleClass('displayNone', scrolled2);
+      });
+    });
+  </script>
+  <style>
+.down > *{ /*별 말고 듸어쓰기하면 자식 all 전체*/
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+}
+
+.changeColor {
+  color:#222234;
+}
+
+.whiteColor {
+  color:#fff;
+}
+
+.seoknav * {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.nav-item a:hover{
+  color:yellow;
+}
+  </style>
+
   <script>
     jQuery(function($) {
     $("body").css("display", "none");
@@ -93,42 +178,46 @@
 
 <body>
   {% load static %}
+  <header>
       <div class="fix">
         <div class="container d-flex flex-wrap justify-content-center">
           <a href="{%url 'home' %}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="0" height="55"><use xlink:href="#bootstrap"/></svg>
-            <span class="fs-4"><strong>Spolier</strong></span>
+            <svg class="bi me-2" width="0" height="72"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-4 changeDisplay1 "><img src="{% static 'logo.png' %}" alt="" style="width:100px; height:40px;"></span>
+            <span class="fs-4 changeDisplay2 displayNone"><img src="{% static 'blacklogo.png' %}" alt="" style="width:100px; height:40px;"></span>
           </a>
-          <ul class="nav">
-            <li class="nav-item"><a href="{%url 'about' %}" class="nav-link link-dark px-2">About</a></li>
-            <li class="nav-item"><a href="{%url 'allprofile' %}" class="nav-link link-dark px-2">Designers</a></li>
-            <li class="nav-item dropdown">
-              <strong><a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black; font-weight: 400;">Works</a></strong>
+          <ul class="nav seoknav">
+            <li class="nav-item" style=" margin:auto; padding-right:16px; padding-left:16px;"><a href="{%url 'about' %}" class="nav-link px-2 whiteColor change1" >About</a></li>
+            <li class="nav-item" style="margin:auto; padding-right:16px; padding-left:16px;" ><a href="{%url 'allprofile' %}" class="nav-link px-2 whiteColor change1">Designers</a></li>
+            <li class="nav-item dropdown" style="margin:auto;">
+              <strong><a class="nav-link whiteColor change1" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Works</a></strong>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="{%url 'works' 'gr' %}">그래픽</a></li>
-                <li><a class="dropdown-item" href="{%url 'works' 'ad' %}">광고</a></li>
-                <li><a class="dropdown-item" href="{%url 'works' 'me' %}">미디어</a></li>
+                <li><a class="dropdown-item" href="{%url 'works' 'gr' %}" style="color:#222234">그래픽디자인</a></li>
+                <li><a class="dropdown-item" href="{%url 'works' 'ad' %}" style="color:#222234">광고디자인</a></li>
+                <li><a class="dropdown-item" href="{%url 'works' 'me' %}" style="color:#222234">영상애니메이션</a></li>
               </ul>
             </li>      
           </ul>
         </div>
       </div>
-
+  </header>
   <!--<div class="b-example-divider"></div>-->
 
   
     <div class="bg">
+
       <video muted autoplay loop>
         <source src="{% static '배경영상.mp4' %}" type="video/mp4">
       </video>
+
       <div class="text">
-        <strong><p>{{ttt}}</p></strong>
+      {{ttt}}
       </div>
     </div>
 
 
 
-  <div class="container" style="width: 100%;">
+  <div class="container page-start" style="width: 100%;">
     {% block content %}
     {% endblock %}
   </div>
