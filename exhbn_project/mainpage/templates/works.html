@@ -76,8 +76,8 @@
       <a href="{% url 'work_detail' works.pk %}" style="text-decoration-line: none;">
         <div class="card h-100" style="max-width: 22rem; width: 18rem; border:0; ">
             <!-- <img src="{{ works.thumbnail.url }}" class="card-img-top" style="height:12rem;" alt="..."> -->
-            <img src="{% static works.thumbnail %}" class="card-img-top" style="height:12rem;" alt="...">
-            <p class="card-text" style="font-size: 0.7em;"></p> <!-- 공백 -->
+            <img src="{% static works.thumbnail %}" class="card-img-top" style="width: 301px; height:208px;" alt="...">
+            <p class="card-text" style="height:10px; margin-bottom:0px;"></p> <!-- 공백 -->
             <p class="card-text" style="font-size: 1.5em; font-weight: bold; color: #222234; margin-bottom: 2px;">{{ works.title }}</p>
             <p class="card-text" style="font-size: 1.125em; color: #666 ">{{ works.artist }}</p>
         </div>

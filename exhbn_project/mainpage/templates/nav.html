@@ -99,7 +99,7 @@
       var $header = $('.fix'); //헤더를 변수에 넣기
       var $page = $('.page-start'); //색상이 변할 부분
       var $window = $(window);
-      var pageOffsetTop = $page.offset().top-90;//색상 변할 부분의 top값 구하기
+      var pageOffsetTop = $page.offset().top-40;//색상 변할 부분의 top값 구하기
       
       var $change1 = $('.change1');
 
@@ -107,7 +107,7 @@
       var $changeDisplay2 = $('.changeDisplay2');
 
       $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
-        pageOffsetTop = $page.offset().top-90;
+        pageOffsetTop = $page.offset().top-40;
       });
       
       $window.on('scroll', function(){ //스크롤시
@@ -182,7 +182,7 @@
       <div class="fix">
         <div class="container d-flex flex-wrap justify-content-center">
           <a href="{%url 'home' %}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-            <svg class="bi me-2" width="0" height="72"><use xlink:href="#bootstrap"/></svg>
+            <svg class="bi me-2" width="0" height="60"><use xlink:href="#bootstrap"/></svg>
             <span class="fs-4 changeDisplay1 "><img src="{% static 'logo.png' %}" alt="" style="width:100px; height:40px;"></span>
             <span class="fs-4 changeDisplay2 displayNone"><img src="{% static 'blacklogo.png' %}" alt="" style="width:100px; height:40px;"></span>
           </a>
